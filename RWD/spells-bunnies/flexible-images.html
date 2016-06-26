@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8"/>
+	<title>Spell"s Bunnies: Flexible Images</title>
+	<style>
+		
+	@font-face {
+    font-family: "EraserRegular";
+    src: url("fonts/eraserregular.eot");
+    src: url("fonts/eraserregular.eot?#iefix") format("embedded-opentype"), url("fonts/eraserregular.woff") format("woff"), url("fonts/eraserregular.ttf") format("truetype"), url("fonts/eraserregular.svg#EraserRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	body {
+	margin: 1em;
+	padding: 0;
+	font: 100%/1.6 Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #fce2c1;
+	}
+	
+	a {
+	color: #666;
+	}
+	
+	a:hover {
+	text-decoration: none;
+	}
+	
+	img {
+	display: block;
+	max-width: 100%;
+	border: 1px #000 solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 20px;
+	}
+	
+	#page {
+	width: 91.100743%;
+	margin: 0 auto;
+	font-size: 1em;
+	max-width: 1188px;
+	}
+	
+	h1, h2 {
+	font-family: "EraserRegular";
+	text-shadow: 1px 1px 0 #000;
+	}
+	
+	h1 {
+	color: orangered;
+	}
+	
+	h1 + h2 {
+	color: #666;
+	}
+	
+	figure {
+	position: relative;
+	float: left;
+	width: 24.158249%; /* 287px / 1188px */
+	margin: 0 0 0 0.841751%; /* 10px / 1188px */
+	padding: 0;
+	}
+	
+	figure:nth-of-type(1) h2{
+	color: red;
+	}
+	
+	figure:nth-of-type(2) h2{
+	color: yellow;
+	}
+	
+	figure:nth-of-type(3) h2{
+	color: green;
+	}
+	
+	figure:nth-of-type(4) h2{
+	color: blue;
+	}
+	
+	figure p {
+	position: absolute;
+	opacity: 0;
+	}
+	
+	figcaption {
+	padding: 1em 1em 1em 0;
+	font-size: 0.8em;
+	}
+	
+	#page:after {
+	clear: both; 
+	content: " "; 
+	display: block; 
+	height: 0; 
+	visibility: hidden;
+	}
+	
+	</style>
+</head>
+
+<body>
+	
+	<div id="page">
+
+		<h1>Spell's Bunnies</h1>
+		
+		<h2>Flexible Images</h2>
+		
+		<p>Minimize the screen yet again. Looking better! Our grid is flexible and our images scale nicely. Even before introducing media queries the site could potentially work on many devices! <a href="media-queries.html">Speaking of media queries...</a></p>
+		
+		<figure>
+		
+			<h2>Sammy</h2>
+
+			<img src="img/sam.jpg" alt="Sammy"/>
+			
+			<figcaption>Pellentesque habitant morbi tristique senectus ac turpis egestas et netus et malesuada fames ac turpis egestas.</figcaption>
+		
+		</figure>
+		
+		<figure>
+		
+			<h2>Grace</h2>
+
+			<img src="img/grace.jpg" alt="Grace"/>
+			
+			<p>7</p>
+			
+			<figcaption>Pellentesque habitant morbi tristique senectus ac turpis egestas et netus et malesuada fames ac turpis egestas.</figcaption>
+		
+		</figure>
+		
+		<figure>
+		
+			<h2>Faith</h2>
+
+			<img src="img/faith.jpg" alt="Faith"/>
+			
+			<figcaption>Pellentesque habitant morbi tristique senectus ac turpis egestas et netus et malesuada fames ac turpis egestas.</figcaption>
+		
+		</figure>
+		
+		<figure>
+		
+			<h2>Hope</h2>
+
+			<img src="img/hope.jpg" alt="Hope"/>
+			
+			<figcaption>Pellentesque habitant morbi tristique senectus ac turpis egestas et netus et malesuada fames ac turpis egestas.</figcaption>
+		
+		</figure>
+		
+	</div>
+
+</body>
+</html>

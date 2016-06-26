@@ -1,0 +1,12 @@
+/* 
+	Responsive Web Design - IE Only
+	Michael Spellacy, Lead UI Developer <michael.spellacy@tmp.com>, TMP Worldwide, LLC
+*/
+
+@media screen, projection {
+
+	.page {
+	min-width: 834px;
+	} 
+
+}

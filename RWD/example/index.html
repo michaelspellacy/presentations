@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/_global.css"/>
+	<!--[if lt IE 9]><link rel="stylesheet" href="css/ie.css"/><![endif]-->
+
+	<script>
+
+	// @font-face FOUT Fighter
+
+	(function(){
+
+		// If Firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+
+		var d = document, e = d.documentElement, s = d.createElement('style');
+
+		if (e.style.MozTransform === ''){ // Gecko 1.9.1 inference
+
+			s.textContent = 'body{visibility:hidden}';
+			e.firstChild.appendChild(s);
+
+			function f(){ s.parentNode && s.parentNode.removeChild(s); }
+
+			addEventListener('load',f,false);
+			setTimeout(f,3000); 
+
+		}
+
+	})();
+
+	</script>
+	<title>About Us - TMP Worldwide</title>
+</head>
+
+<body id="about-us">
+
+	<form id="aspNetForm" action="about-us.html" method="post">
+
+		<div class="page">
+
+			<div class="header">
+
+				<img src="img/hdr-logo.png" alt="TMP Worldwide LLC - The Digital Brand Authority"/>
+
+				<ul role="navigation">
+					<li><a href="#" accesskey="1">Home</a></li>
+					<li><a href="#" accesskey="2">Our Work</a></li>
+					<li><a href="#" accesskey="3">Our Clients</a></li>
+					<li><a href="#" accesskey="4">About Us</a></li>
+					<li><a href="#" accesskey="5">Careers</a></li>
+					<li><a href="#" accesskey="6">Locations</a></li>
+					<li class="last-child"><a href="#" accesskey="7">Contact Us</a></li>
+				</ul>
+
+			</div><!--/.header-->
+
+			<div class="section">
+
+				<h1>About Us</h1>
+
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+				<div class="article" role="main">
+
+					<img src="img/creative-culture.jpg" alt="Image Description that...DESCRIBES THE IMAGE!"/>
+
+					<h2>Recent Jobs</h2>
+
+					<ul>
+						<li>
+
+							<h3><a href="#">Account Director - Chicago, IL</a></h3>
+
+							<p><b>Description:</b> We keep the global economy moving. It's that simple. As the world's largest independent recruitment advertising agency, we have a hand in finding the best-fit employees for companies across all sectors and across all geographical boundaries. From sourcing nurses for hospitals and engineers for the aerospace industry to security personnel for airports and wait staff for restaurants, we literally find employees for employer...</p>
+
+							<p><b>Reference Code:</b> THX1138</p>
+
+						</li>
+						<li>
+
+							<h3><a href="#">Product Analyst - Waltham, MA</a></h3>
+
+							<p><b>Description:</b> We keep the global economy moving. It's that simple. As the world's largest independent recruitment advertising agency, we have a hand in finding the best-fit employees for companies across all sectors and across all geographical boundaries. From sourcing nurses for hospitals and engineers for the aerospace industry to security personnel for airports and wait staff for restaurants, we literally find employees for employer...</p>
+
+							<p><b>Reference Code:</b> THX1139</p>
+
+						</li>
+						<li>
+
+							<h3><a href="#">Product Analyst - Chicago, IL</a></h3>
+
+							<p><b>Description:</b> We keep the global economy moving. It's that simple. As the world's largest independent recruitment advertising agency, we have a hand in finding the best-fit employees for companies across all sectors and across all geographical boundaries. From sourcing nurses for hospitals and engineers for the aerospace industry to security personnel for airports and wait staff for restaurants, we literally find employees for employer...</p>
+
+							<p><b>Reference Code:</b> THX1138</p>
+
+						</li>
+					</ul>
+
+				</div><!--/.article-->
+
+				<div class="aside" role="complementary">
+
+					<h2>Useful Links</h2>
+
+					<ul id="useful-links">
+						<li>
+
+							<h3><a href="#">TMP Worldwide</a></h3>
+
+							<p>Corporate Site</p>
+
+						</li>
+						<li>
+
+							<h3><a href="#">Meshworking</a></h3>
+
+							<p>TMP's Next Gen Thinking Blog</p>
+
+						</li>
+						<li>
+
+							<h3><a href="#">Advertising Age</a></h3>
+
+							<p>Ad Age's Website</p>
+
+						</li>
+						<li>
+
+							<h3><a href="#">Articles and Advertising News</a></h3>
+
+							<p>All the news that is fit to print!</p>
+
+						</li>
+					</ul>
+
+					<div id="job-alert-signup">
+
+						<h2>Sign Up for Job Alerts</h2>
+
+						<p>Please enter email address for alerts and TMP news.</p>
+
+						<label for="txtEnterEmail" id="lblEnterEmail" class="wai email">Enter Email</label>
+
+						<input id="txtEnterEmail" name="txtEnterEmail" type="text" aria-labelledby="lblEnterEmail" class="text email"/>
+
+						<label for="txtEnterPassword" id="lblEnterPassword" class="wai password">Enter Password</label>
+
+						<input id="txtEnterPassword" name="txtEnterPassword" type="text" aria-labelledby="lblEnterPassword" class="text password"/>
+
+						<input type="submit" class="submit" value="Subscribe"/>
+
+					</div><!--/#job-alert-signup-->
+
+					<h2>Useful Links</h2>
+
+					<ul id="tag-cloud">
+						<li class="sml"><a href="#">Digital Product Manager</a></li>
+						<li class="lrg"><a href="#">User Interface Developer</a></li>
+						<li class="med"><a href="#">SEO Analyst</a></li>
+						<li class="sml"><a href="#">Microsoft.Net Developer</a></li>
+						<li class="med"><a href="#">Accessibility Consultant</a></li>
+						<li class="lrg"><a href="#">Interactive Developer</a></li>
+						<li class="sml"><a href="#">Web Designer</a></li>
+						<li class="lrg"><a href="#">Account Services Director</a></li>
+						<li class="med"><a href="#">Java Developer</a></li>
+						<li class="sml"><a href="#">New York Jobs</a></li>
+						<li class="med"><a href="#"><abbr title="Search Engine Optimization">SEO</abbr> Analyse</a></li>
+						<li class="lrg"><a href="#">User Interface Designer</a></li>
+					</ul>
+
+				</div><!--/.aside-->
+
+				<p class="back-to-top"><a href="#about-us">Back to top</a></p>
+
+			</div><!--/.section-->
+
+		</div><!--/.page-->
+
+		<div class="footer">
+
+		<h2 class="wai">Additional Information</h2>
+
+		<ul>
+			<li class="first-child">We're in advertising &ndash; of course we're an equal opportunity employer.</li>
+			<li><a href="http://jobsattmp.com/" class="external">Jobs at TMP</a></li>
+			<li><a href="http://feeds.feedburner.com/tmpworldwide/">RSS</a></li>
+			<li><a href="http://www.tmp.com/privacy/">Privacy</a></li>
+			<li><a href="http://www.tmp.com/connect/">Contact us</a></li>
+			<li class="last-child">&copy; 2011 tmp.worldwide</li>
+		</ul>
+
+		</div><!--/.footer-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="js/_global.js"></script>
+
+	</form><!--/#aspNetForm-->
+
+</body>
+</html>

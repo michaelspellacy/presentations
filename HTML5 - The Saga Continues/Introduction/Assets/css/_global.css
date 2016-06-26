@@ -1,0 +1,201 @@
+
+@media all {	
+	
+	body {
+	background: #eee;
+	font: 72.5%/1.5 Verdana, Arial, Helvetica, Sans-Serif, Myuen;
+	}
+	
+	h1, h2 {
+	font: 2em Sans-Serif;
+	text-shadow: 2px 2px 0 #ccc;
+	}
+	
+	form {
+	display: inline-block;
+	background: #fff;
+	border: 1px #666 solid;
+	margin: 10px;
+	padding: 10px;
+	-webkit-box-shadow: 0 3px 20px #666;
+	-moz-box-shadow: 0 3px 20px #666;
+	box-shadow: 0 3px 20px #666;
+	}
+	
+	form fieldset {
+	display: table;
+	border: none;
+	}
+	
+	form legend {
+	color: #666;
+	font-style: italic;
+	font-weight: bold;
+	padding-bottom: 10px;
+	}
+
+	form div {
+	display: table-row;
+	}
+
+	form div:nth-of-type(odd) {
+  	background-color: #ccc;
+	}
+	
+	form div:nth-of-type(even) {
+  	background-color: #eee;
+	}
+
+	form div label, form div input {
+	display: table-cell;
+	margin: 5px;
+	}
+
+	form div label {
+	text-align: right;
+	font-weight: bold;
+	white-space: nowrap;
+	cursor: hand;
+	}
+
+	form div input {
+	width: 150px;
+	}
+	
+	form input[type="submit"], form input[type="reset"] {
+	background: #0186e4;
+	color: #fff;
+	border: 1px #0186e4 solid;
+	padding: 3px 6px;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	margin: 10px 6px;
+	cursor: pointer;
+	-webkit-border-radius: 6px;
+	-webkit-box-shadow: 0 2px 12px #666;
+	-moz-border-radius: 6px;
+	-moz-box-shadow: 0 3px 12px #666;
+	box-shadow: 0 3px 12px #666;
+	border-radius: 6px;
+	}
+	
+	form input[type="submit"]:focus, form input[type="reset"]:focus {
+	background: red;
+	}
+
+	/* Video Player */
+	
+	#video-part-3 video {
+	display: block;
+	padding: 15px 15px 50px;
+	margin: 40px 30px 40px;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: -2px 2px 20px #666;
+	-moz-border-radius: 10px;
+	-moz-box-shadow: -3px 3px 20px #666;
+	border-radius: 10px;
+	box-shadow: -3px 3px 20px #666;
+	-webkit-transform: rotate(9deg);
+	-moz-transform: rotate(9deg);
+	transform: rotate(9deg);
+	-o-transform: rotate(9deg);
+	}
+
+	#controls {
+	position: absolute;
+	bottom: 20px;
+	left: 60px;
+	border-radius: 5px;
+	border: 1px #333 solid;
+	background: #000 url(gradient.png) repeat-x top left;
+	width: 200px;
+	height: 31px;
+	opacity: 0.3;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	}
+
+	#video-part-3 #controls {
+	left: 85px;
+	bottom: 8px;
+	-moz-transform: rotate(9deg);
+	transform: rotate(9deg);
+	-o-transform: rotate(9deg);
+	}
+
+	#controls:hover { 
+	border-color: #555;
+	opacity: 0.85;
+	}
+
+	#controls button {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: transparent;
+	}
+
+	#controls #display {
+	position: absolute;
+	top: 6px;
+	left: 45px;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-family: "Xenon2", sans-serif;
+	font-size: 10px;
+	}
+
+	#controls #volume {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	width: 50px;
+	height: 15px;
+	}
+
+	#controls #volumeicon {
+	position: absolute;
+	top: 8px;
+	right: 62px;
+	}
+	
+	pre {
+	display: block;
+	width: 95%;
+	margin-right: 2%;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	padding: 10px;
+	border-width: 2px;
+	border-style: dotted;
+	border-color: #b8b8d4;
+	background: #d9d9e8;
+	}
+	
+	code {
+	font-size: 1.8em;
+	color: #339;
+	font-style: italic;
+	}
+	
+	pre, code {
+	line-height: 1.8em;
+	}
+	
+	code span {
+	color: #800000;
+	}
+	
+}	
