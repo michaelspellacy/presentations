@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" href="css/_global.css"/>
+	<title>HTML5: The Saga Continues - Web Forms 2.0</title>
+</head>
+
+<body id="web-form">
+
+	<h1>HTML5: The Saga Continues - Web Forms 2.0</h1>
+
+	<p>Please fill out the form located below and be sure to fill in all fields. For the purpose of this test you should be using Opera.</p>
+
+	<form action="http://www.w3c.org/" method="post" name="myForm" id="myForm" autocomplete="off">
+
+		<fieldset>
+		
+		<legend>Personal Details</legend>
+		
+		<div>
+
+			<label for="txtFirstName">First Name:</label>
+
+			<input type="text" name="txtFirstName" id="txtFirstName" placeholder="Enter your first name" autofocus="autofocus" required="required"/>
+
+		</div>
+
+		<div>
+
+			<label for="txtLastName">Last Name:</label>
+
+			<input type="text" name="txtLastName" id="txtLastName" placeholder="Enter your last name" required="required"/>
+
+		</div>
+
+		<div>
+
+			<label for="txtPlanet">Home Planet:</label>
+
+			<input type="text" name="txtPlanet" id="txtPlanet" list="planets" placeholder="Enter your home planet" required="required"/>
+
+			<datalist id="planets">
+				<option value="Mercury">Mercury</option>
+				<option value="Venus">Venus</option>
+				<option value="Earth">Earth</option>
+				<option value="Mars">Mars</option>
+				<option value="Jupiter">Jupiter</option>
+				<option value="Saturn">Saturn</option>
+				<option value="Uranus">Uranus</option>
+				<option value="Neptune">Neptune</option>
+			</datalist>
+
+		</div>
+		
+		<div>
+
+			<label for="numZipCode">Zip Code:</label>
+
+			<input type="text" name="numZipCode" id="numZipCode" required="required" pattern="[\d]{5}"/>
+
+		</div>
+
+		<div>
+
+			<label for="numShipExpenses">Ship Expenses:</label>
+
+			<input type="range" name="numShipExpenses" id="numShipExpenses" min="10" max="1000"/>
+
+		</div>
+
+		<div>
+
+			<label for="numAge">Experience Rating:</label>
+
+			<input type="number" name="numAge" id="numAge" min="10" max="100" required="required"/>
+
+		</div>
+
+		<div>
+
+			<label for="datStart">Start Date:</label>
+
+			<input type="date" name="datStart" id="datStart" required="required"/>
+
+		</div>
+
+		
+		</fieldset>
+
+		<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"/>
+
+		<input type="reset" name="btnReset" id="btnReset" value="Reset"/>
+
+	</form>
+	
+	<p>Next: <a href="video-part-1.html">Fun with Video - Part 1</a></p>
+
+</body>
+</html>
