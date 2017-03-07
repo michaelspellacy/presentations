@@ -1,0 +1,96 @@
+<h1>UI Guild Meeting: March 20th, 2017</h1>
+
+<h2>ARIA & You: An Example of Accessible Interaction</h2>
+
+<h3>A TMP Case Study of the Kaiser </h3>
+
+<p>ARIA (Accessible Rich Internet Applications) is an extension of HTML, created by the W3C, that allow authors to make their web site or appications more usable to various assistive technologies, such as screen or braille readers.</p>
+
+<p>In the process of creating our navigation, we adhere to the core principles of progressive enhancment and resilient design. Crafting an experience that is just as usable at it's core, without the need for CSS, JavaScript, or even ARIA. The journey begins, as always, with good old HTML.</p>
+
+<h3>Semantics</h3>
+
+<p>For the markup of our navigation, we focus on providing semantic robustness:</p>
+
+<ul>
+	<li>Use of HTML5 landmarks, such as <code>&lt;navigation&gt;</code>, provide additional baked in information to AT users, so be sure to use them where appropriate.</li>
+	<li>While sighted users are provided instant visual context, AT users may benefit from additional aids. In the past, this has come in the form of hiding text offscreen, but ARIA can provide additional information about your interface, through smart use of aria-label.</li>
+	<li>ID's on our <code>&lt;li&gt;</code> elements will play a nice role in providing additional context and enhancment for sighted and non-sighted users alike.</li>
+</ul>
+
+<h3>Enhance</h3>
+
+<p>Since we will be using JavaScript to enhance our navigation, we need to make sure we are providing <em>parity</em> for AT users as well. It is not enough to create an interface that can be toggled visually. There is more work to do. Here, we have done the following:
+
+		<ul>
+			<li>
+
+				<p>First, add our navigation menu button. This button will toggle the navigation opened and closed.</p>
+
+<code><pre>&lt;button id="primary-button" aria-expanded="false"&gt;Menu&lt;/button&gt;</pre></code>
+
+				<p>The button is dynamically prepended to the navigation lanadmark itself. We could add the buuton directly to our markup, but since it only exists to toggle our navigation, then it can be treated as an enhancement.</p>
+
+				<p>Note the addition of aria-expanded to the button as well. Since our navigation is initially closed, we immediatly set this value to "false". Normally, we might place the button outside of the navigation landmark, but by placing it within the landmark, we are providing better context for screen reader users, which will announce: "Menu, collapsed button navigation primary". This allows our button to dovetail nicely with the parent <code>aria-label</code> attribute that has a value of "primary". If this button were placed outside of our navigation, a screen reader might only announce: "Menu, collapsed button". Not very helpful. In that case, we might require additional ARIA attributes, such as aria-labeledby, to auditorially bind the button and the navigation together, but why do that when simply inserting the button here is so much easier?</p>
+
+				<p></p>
+
+			</li> 
+			<li>
+
+				<p>Next, we need to enhance our h2 element. It is no longer a heading, but an interactive element within our navigation:</p>
+
+<code><pre>&lt;h2 class="primary-nav-heading" aria-expanded="false" role="button" tabindex="0"&gt;Who We Are&lt;/h2&gt;</pre></code>
+
+				<p>Here we must also include aria-expanded with an initial state of "false". We also append a role attribute with a value of "button", since it now a button, and a tabindex with a value of "0". Setting an element with a tabindex of zero allows a non-focusable element to receive focus.</p>
+
+			</li>
+			<li>
+
+				<p>Lastly, we are appending a hidden element to the navigation:</p>
+
+<code><pre>&lt;div hidden id="current-selection">Current Page&lt;/div&gt;</pre></code>
+
+				<p>This element will work cosely with our <li> ID's.</p>
+
+			</li>
+		</ul>
+
+<h3>Interaction</h3>
+
+	<p>Business as usual in applying a script that toggles our navigation button and navigation sub menus, but in additon to these behaviors, we also need to ensure that we are applying equivelency to our ARIA attributes. ARIA states need to be toggled as well, to indicate to a screen reader that states within the menu have changed.</p>
+
+	<p>A part of our script will also match the <code>&lt;body&gt;</code> ID with the <code>&lt;li&gt;</code> ID. When there is a match, our script will append aria-labeledby with a value of "current-selection", to the list items hyperlink:</p>
+
+<code><pre>&lt;a href="#content" aria-describedby="current-selection"&gt;The KP Difference&lt;/a&gt;</pre></code>
+
+<p>In addition to this, we will also change the matched links href value to instead anchor to a position within the page, rather than take us to the same page again after clicking on it. When a screen reader accesses the link, the following will be read aloud: "Internal, link, The KP Difference" or "Link, The KP Difference, Current Page". The aria-describedby value can also be used as a styling hook to indicate to visual users that the selection is for the current page as well. This enhancement is a really nice touch for visual and non-visual users alike!</p>
+
+<h3>Don't Forget</h3>
+
+<ul>
+	<li>Escape Key - Be mindul of keyboard navigation. This means providing additional scripting for events such as clicking on the escape key or space bar.</p>
+	<li>Focus Management - What happens when a user closes your interface? Where does the elements focus go? Typically we return focus to the initiation point, so that a user can continue on with experience from there. So, closing the navigation with an escape key, might bring us back to the menu button, etc. </li>
+</ul>
+
+<h3>Takeaways</h3>
+
+<ul>
+	<li>Our interfaces go deeper than what we can see on our monitors. A great user interface can be used by anynody.
+	<li>Parity between the visual and non-visual experience is integral to success.
+	<li>Use the right elements for the job and use ARIA to aid the experience where needed. The first rule of ARIA is not to use it. For example, use &lt;button&gt;  instead of &lt;div role="button"&gt;</li>
+	<li>Accessibility can be hard at first, but get's easier with practice. Take simple steps to improving. Estimate accordingly to allow for it.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
