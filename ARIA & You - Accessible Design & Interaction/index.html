@@ -24,7 +24,7 @@
 
 				<h1>ARIA & You: Accessible Design & Interaction</h1>
 
-				<p>Posted on <b>March 21st, 2017</b> by <a href="#author">Michael Spellacy</a></p>
+				<p>Posted on March 21st, 2017 by <a href="#author">Michael Spellacy</a></p>
 
 				<p><a href="https://www.w3.org/WAI/intro/aria">ARIA (Accessible Rich Internet Applications)</a> is an extension of HTML, created by the <a href="https://www.w3.org/">W3C</a>, which allows authors to make their websites or applications more usable to various assistive technologies (AT), such as screen or braille readers.</p>
 
@@ -49,7 +49,7 @@
     &lt;ul id="primary-nav-list"&gt;
     &lt;li&gt;
 
-        <strong>&lt;h2 class="primary-nav-heading"&gt;Who We Are&lt;/h2&gt;</strong>
+        &lt;h2 class="primary-nav-heading"&gt;Who We Are&lt;/h2&gt;
 
         &lt;ul&gt;
             &lt;li <strong>id="nav-the-kp-difference"</strong>&gt;&lt;a href="/the-kp-difference/"&gt;The KP Difference&lt;/a&gt;&lt;/li&gt; 
@@ -68,7 +68,7 @@
 
 				<h3>Prep Work & Enhancement</h3>
 
-				<p>Since we will be using JavaScript to enhance our navigation, we need to ensure that we are providing <em>parity</em> for AT users. It is not enough to create an interface that can simply be toggled visually. There is deeper work to be done here in order to provide a navigational interface that can be used by all people.</p>
+				<p>Since we will be using JavaScript (jQuery in our example) to enhance our navigation, we need to ensure that we are providing <em>parity</em> for AT users. It is not enough to create an interface that can simply be toggled visually. There is deeper work to be done here in order to provide a navigational interface that can be used by all people.</p>
 
 				<ol>
 					<li>
@@ -79,7 +79,7 @@
 
 						<pre><code contenteditable="true">&lt;button id="primary-button" <strong>aria-expanded="false</strong>"&gt;Menu&lt;/button&gt;</code></pre>
 
-						<p>Normally, we might place a menu button <em>outside</em> of the navigation landmark, but by placing it <em>within</em> the landmark, we are providing better context for AT users. This allows our button to dovetail nicely with the <code>&lt;nav&gt;</code> landmark and the <code>aria-label</code> that element includes. Screen readers will now announce a variant of: "Menu, collapsed button navigation primary". If this button were placed outside of our navigation, a screen reader might only announce: "Menu, collapsed button", which is not very helpful. In such cases, we might require additional ARIA attributes, such as aria-contol, to auditorily bind the button and the navigation together.</p>
+						<p>Normally, we might place a menu button <em>outside</em> of the navigation landmark, but by placing it <em>within</em> the landmark, we are providing better context for AT users. This allows our button to dovetail nicely with the <code>&lt;nav&gt;</code> landmark and the <code>aria-label</code> that element includes. Screen readers will now announce a variant of: "Menu, collapsed button navigation primary". If this button were placed outside of our navigation, a screen reader might only announce: "Menu, collapsed button", which is not very helpful. In such cases, we might require additional ARIA attributes, such as aria-contols, to bind the button and the navigation together.</p>
 
 <pre><code contenteditable="true">&lt;nav id="primary-nav" aria-label="primary"&gt;
 
@@ -128,7 +128,7 @@
 
 				<h3>Bringing It Together</h3>
 
-					<p>It is business as usual in applying a script that toggles our navigation button, menus, and sub menus, but in addition to these behaviors, we must also remember to ensure that we are passing the same state information to our ARIA attributes. If your navigation is now open, then your ARIA attribute states must reflect these states as well.</p>
+					<p>It is business as usual in applying a script that toggles the visual state of our navigation button, menus, and sub menus, but in addition to these behaviors, we must also remember to ensure that we are passing the same state information to our ARIA attributes. If your navigation is now open, then your ARIA attributes must reflect these states as well.</p>
 
 		<pre><code contenteditable="true">&lt;h2 class="primary-nav-heading" <strong>aria-expanded="true"</strong> role="button" tabindex="0"&gt;Who We Are&lt;/h2&gt;</code></pre>
 
@@ -179,10 +179,11 @@
 				<h3>Reminders</h3>
 
 				<ul>
-					<li>Our interfaces go deeper than what we can see on our monitors. A great user interface can be used by anybody.
+					<li>Our interfaces go deeper than what we can see on our monitors. A great user interface can be used by anybody.</li>
 					<li>Parity between the visual and non-visual experience is integral to success.</li>
-					<li>Use the right elements for the job and use ARIA to aid the experience where needed. The first rule of ARIA is not to use it. For example, use <code>&lt;button&gt;</code>  instead of <code>&lt;div role="button"&gt;</code></li>
-					<li>Accessibility can be hard at first, but get's easier with practice. Take simple steps to improving. Estimate accordingly to allow for it during design and development.</li>
+					<li>Use the right elements for the job and use ARIA to aid the experience where needed. The first rule of ARIA is not to use it. For example, a native <code>&lt;button&gt;</code> has accessibility built in, whereas <code>&lt;div role="button"&gt;</code> will need additional atributes to be keyboard friendly.</li>
+					<li>Accessibility can be hard at first, but get's easier with practice. Take simple steps to improving and estimate accordingly to allow for it during design and development.</li>
+					<li>Test your work using a screen reader! The <a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">aXe plugin</a> can also provide a ton of information about your interface.</li>
 				</ul>
 
 				<p><a href="example.html">Working Example</a></p>
