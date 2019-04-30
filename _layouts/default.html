@@ -10,24 +10,24 @@
 	<meta content="{{ page.title }}" property="og:title">{% if page.description %}
 	<meta content="{{ page.description }}" property="og:description" name="description">{% endif %}
 	<meta content="{{site.theme-color}}" name="theme-color">
-	<link href="/css/global.css" rel="stylesheet">
+	<link href="/css/global.css" rel="stylesheet">{% if page.localcss %}
+	<link href="{{ page.localcss }}" rel="stylesheet">{% endif %}
 	<link href="/manifest.json" rel="manifest">
 	<link href="{{ page.url | replace:'index.html','' | prepend: site.url}}" rel="canonical">
 	<link href="{{site.author-image}}?s=16" rel="icon">
 	<link href="/rss.xml" rel="alternate" title="{{site.author}} - RSS Feed" type="application/rss+xml">
 	<link href="mailto:{{site.email}}" rel="me">
 	<title>{{ page.title }} - {{ site.name }}</title>
-
-	<!--
-
-	Hello there! Come here my little friend. Don't be afraid.
-	It is nice to see somebody exploring the source code of a website.
-	If you are curious about any part of my site, feel free
-	to drop me a line. My email address is spell at spellacy.net
-
-	-->
-
 </head>
+
+<!--
+
+Hello there! Come here my little friend. Don't be afraid.
+It is nice to see somebody exploring the source code of a website.
+If you are curious about any part of my site, feel free
+to drop me a line. My email address is spell at spellacy.net
+
+-->
 
 <body id="{{page.path | replace:'.html',''| replace: '/', '-'}}"{% if page.section %} class="{{ page.section }}"{% endif %}>
 
@@ -37,7 +37,7 @@
 
 		<p class="alert"><strong>Excuse the mess! This site is undergoing an open redesign, so things may be a little broken and disorganized.</strong></p>
 
-		<header id="banner">
+		<header id="banner"{% if page.theme == "minify" %}class="minify"{% endif %}>
 
 			<a class="h-card" href="{{site.url}}" rel="me">
 
@@ -86,7 +86,8 @@
 
 	</div><!--/#page-->
 
-	<script src="/js/global.js"></script>
+	<script src="/js/global.js"></script>{% if page.localjs %}
+	<script src="{{ page.localjs }}"></script>{% endif %}
 
 </body>
 </html>
