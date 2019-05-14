@@ -6,11 +6,7 @@
 	<meta content="noindex, nofollow" name="robots">{% endif %}
 	<meta content="article" name="og:type">{% if page.mf-photo %}
 	<meta content="{{ page.mf-photo }}" property="og:image">{% else %}
-<<<<<<< HEAD:_layouts/_default.html
 	<meta content="{{ site.author-image }}?s=300" property="og:image">
-=======
-	<meta content="{{ site.author-image }}?s=600" property="og:image">
->>>>>>> 008599e3d564fb16cb22a21fb5ea078fdc03f314:_layouts/default.html
 	<meta content="{{ site.author-image-alt }}" property="og:image:alt">{% endif %}
 	<meta content="{{ page.title }}" property="og:title">{% if page.description %}
 	<meta content="{{ page.description }}" name="description">
@@ -80,11 +76,7 @@
 
 				{% if page.date %}
 
-<<<<<<< HEAD:_layouts/_default.html
-				<time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-=======
 				<time datetime="{{ page.date }}"><b>{{ page.date | date: "%B %d, %Y" }}</b></time>
->>>>>>> 008599e3d564fb16cb22a21fb5ea078fdc03f314:_layouts/default.html
 
 				{% endif %}
 
