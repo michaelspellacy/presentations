@@ -6,11 +6,17 @@
 	<meta content="noindex, nofollow" name="robots">{% endif %}
 	<meta content="article" name="og:type">{% if page.mf-photo %}
 	<meta content="{{ page.mf-photo }}" property="og:image">{% else %}
+<<<<<<< HEAD:_layouts/_default.html
 	<meta content="{{ site.author-image }}?s=300" property="og:image">
+=======
+	<meta content="{{ site.author-image }}?s=600" property="og:image">
+>>>>>>> 008599e3d564fb16cb22a21fb5ea078fdc03f314:_layouts/default.html
 	<meta content="{{ site.author-image-alt }}" property="og:image:alt">{% endif %}
 	<meta content="{{ page.title }}" property="og:title">{% if page.description %}
 	<meta content="{{ page.description }}" name="description">
-	<meta content="{{ page.description }}" property="og:description">{% endif %}
+	<meta content="{{ page.description }}" property="og:description">{% elsif page.layout == "micropubpost" %}
+	<meta content="{{ page.content | truncate: 220 | strip_html }}" name="description">
+	<meta content="{{ page.content | truncate: 220 | strip_html }}" property="og:description">{% endif %}
 	<meta content="{{ site.theme-color }}" name="theme-color">
 	<link href="/css/global.css" rel="stylesheet">{% if page.localcss %}
 	<link href="{{ page.localcss }}" rel="stylesheet">{% endif %}
@@ -31,11 +37,11 @@
 	Hello there! Come here my little friend. Don't be afraid.
 	It is nice to see somebody exploring the source code of a website.
 	If you are curious about any part of my site, feel free
-	to drop me a line. My email address is spell at spellacy.net
+	to contact me. My email address is spell@spellacy.net
 
 -->
 
-<body id="{{ page.path | replace:'.html',''| replace: '/', '-'}}"{% if page.section %} class="{{ page.section }}"{% endif %}>
+<body id="{{ page.path | replace:'.html',''|  replace:'.md','' | replace:'_','' | replace: '/', '-'}}"{% if page.section %} class="{{ page.section }}"{% endif %}>
 
 	<div id="page">
 
@@ -74,7 +80,11 @@
 
 				{% if page.date %}
 
+<<<<<<< HEAD:_layouts/_default.html
 				<time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+=======
+				<time datetime="{{ page.date }}"><b>{{ page.date | date: "%B %d, %Y" }}</b></time>
+>>>>>>> 008599e3d564fb16cb22a21fb5ea078fdc03f314:_layouts/default.html
 
 				{% endif %}
 
