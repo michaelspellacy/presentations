@@ -1,0 +1,3557 @@
+WEBVTT
+
+NOTE duration:"00:37:16.6100000"
+
+NOTE language:en-us
+
+NOTE Confidence: 0.831963956356049
+
+442e4d50-3a5a-491b-bd2b-dd80b1ef0b54
+00:00:02.720 --> 00:00:10.292
+OK, Good morning
+everybody an thank
+
+NOTE Confidence: 0.831963956356049
+
+4172feaf-9284-4312-86ec-34ac197dadd1
+00:00:10.292 --> 00:00:17.864
+you all for
+joining today's call.
+
+NOTE Confidence: 0.891736686229706
+
+66a178e5-8b68-4977-bf1d-5379bef87d26
+00:00:17.870 --> 00:00:23.330
+I thought this would be a good
+opportunity for us to kind of
+
+NOTE Confidence: 0.891736686229706
+
+dd4cd1cc-a897-41f8-b7f9-043eb366c98a
+00:00:23.330 --> 00:00:29.210
+get together an for, UM, need to
+hear some of the tools that we
+
+NOTE Confidence: 0.891736686229706
+
+3040dbab-1026-4b0d-bc88-e14ac7b3e09e
+00:00:29.210 --> 00:00:32.990
+use to test sites for
+Accessibility issues so you
+
+NOTE Confidence: 0.891736686229706
+
+830df39e-408d-4773-b4fd-c59a7ae33002
+00:00:32.990 --> 00:00:35.090
+could start using those tools
+
+NOTE Confidence: 0.915948867797852
+
+398908cc-d799-438d-a1db-8c7f6c2323b0
+00:00:35.090 --> 00:00:41.772
+too. If you like um, and uh, so
+that we're kind of all on the
+
+NOTE Confidence: 0.915948867797852
+
+5840816b-f16a-4c1a-9d83-97d5982e0ec3
+00:00:41.772 --> 00:00:45.852
+same page when it comes to
+debugging issues and sharing
+
+NOTE Confidence: 0.915948867797852
+
+09eacbec-c599-4960-be59-c559caac4d2d
+00:00:45.852 --> 00:00:47.892
+information, so let's jump right
+
+NOTE Confidence: 0.0635184571146965
+
+6cba0cdb-3592-4be8-8f7b-5e513e51a3f7
+00:00:47.892 --> 00:00:50.670
+into it. Um?
+
+NOTE Confidence: 0.912383794784546
+
+17d503bf-3870-4274-bd30-aff0df6e372e
+00:00:51.230 --> 00:00:56.222
+Before we delve into it, I just
+want to say like that great
+
+NOTE Confidence: 0.912383794784546
+
+e6c8eed4-7ad5-4d6e-9273-f9f03f32d091
+00:00:56.222 --> 00:00:59.678
+designers and developers are
+inclusive thinking ones, so it
+
+NOTE Confidence: 0.912383794784546
+
+beb3d45d-b1ec-4aef-b577-7dce517eea86
+00:00:59.678 --> 00:01:00.830
+is very important.
+
+NOTE Confidence: 0.895409762859344
+
+a1292409-91f5-45fc-abea-dad17546e01a
+00:01:01.550 --> 00:01:06.702
+Um, uh, that we all test that
+work and ensure that it is as
+
+NOTE Confidence: 0.895409762859344
+
+01607c3e-962a-4c9a-9fca-b912f922d00f
+00:01:06.702 --> 00:01:08.174
+accessible as possible for
+
+NOTE Confidence: 0.914772570133209
+
+b266f107-4574-461a-a2a5-90857033d506
+00:01:08.174 --> 00:01:12.838
+everybody. Uh, current estimates
+indicate that over 15% of the
+
+NOTE Confidence: 0.914772570133209
+
+37790902-1c02-4f67-bb1f-9fc0c5dd4e8e
+00:01:12.838 --> 00:01:16.958
+population have a disability of
+some kind. That's roughly 1
+
+NOTE Confidence: 0.914772570133209
+
+7c208bc7-5a0b-487b-951b-8a655b34c284
+00:01:16.958 --> 00:01:21.490
+billion people. Or to put it in
+a better perspective, this
+
+NOTE Confidence: 0.914772570133209
+
+cd76e73a-e6b9-4c5e-bb76-8c34133453b3
+00:01:21.490 --> 00:01:26.846
+number is about the size of
+China, and I might add in an
+
+NOTE Confidence: 0.914772570133209
+
+00857486-00c3-4fd7-944a-98b530ae0576
+00:01:26.846 --> 00:01:31.378
+effort to get our priorities
+straight that this is likely a
+
+NOTE Confidence: 0.914772570133209
+
+ae5db570-0ce5-4966-bd76-d95baa05b595
+00:01:31.378 --> 00:01:33.438
+much larger number than IE11's
+
+NOTE Confidence: 0.910498261451721
+
+5030c4b1-56e1-455b-aeab-da09eac3927b
+00:01:33.438 --> 00:01:37.650
+market share. So we haven't been
+in moral obligation. Did you?
+
+NOTE Confidence: 0.910498261451721
+
+dcdb68cf-2d40-41d0-a2f8-a5aa09140373
+00:01:37.650 --> 00:01:42.090
+Are a small part to help folks
+out, especially when it applies
+
+NOTE Confidence: 0.910498261451721
+
+4bb1b518-a49d-4475-8cc6-d20c4792cc4a
+00:01:42.090 --> 00:01:46.530
+to users being able to learn
+more about a company and seek
+
+NOTE Confidence: 0.926114916801453
+
+1c89a0ba-3568-4a75-9f6e-4d3faaa869f4
+00:01:46.530 --> 00:01:50.867
+employment there. And are
+Speaking of employment. Many, if
+
+NOTE Confidence: 0.926114916801453
+
+b39af7c9-287e-4e98-b881-c4ce156028e2
+00:01:50.867 --> 00:01:54.877
+not all, of our clients tout
+themselves as equal opportunity
+
+NOTE Confidence: 0.926114916801453
+
+647beb0e-b1b9-4c27-89f8-ebf699ac7688
+00:01:54.877 --> 00:01:59.288
+employers, so they expect us to
+reach 100% of their perspective
+
+NOTE Confidence: 0.926114916801453
+
+e5e2ad06-1286-4717-ab3c-d782f8d135e5
+00:01:59.288 --> 00:02:02.496
+candidates, not 85% one
+hundreds. Whether we are
+
+NOTE Confidence: 0.926114916801453
+
+35ed31b9-9f70-483f-bbbf-42208a2b6bf5
+00:02:02.496 --> 00:02:08.110
+specifically asked to do so or
+not. and I was like to say that
+
+NOTE Confidence: 0.926114916801453
+
+58b6f9a9-67d0-4454-9c0f-838ea8f69a19
+00:02:08.110 --> 00:02:10.516
+equal opportunity employment
+begins with TMP.
+
+NOTE Confidence: 0.910790205001831
+
+1090194c-0310-4ac8-bd3e-9ca024f7f968
+00:02:11.180 --> 00:02:15.613
+Uh, for developers? Uhm, that
+means that every single one of
+
+NOTE Confidence: 0.910790205001831
+
+3b3ae7da-ed78-4eb1-b162-341cd4a7ed61
+00:02:15.613 --> 00:02:19.643
+us must smoke. Tests are work
+more frequently. Now this
+
+NOTE Confidence: 0.910790205001831
+
+38d38190-761d-49ed-b2be-5ce3225eab8f
+00:02:19.643 --> 00:02:21.255
+involves automated and manual
+
+NOTE Confidence: 0.88787579536438
+
+cadcde01-3d8a-4b90-a138-a38f50d49019
+00:02:21.255 --> 00:02:25.699
+testing. So we'll get
+right into it now.
+
+NOTE Confidence: 0.872015714645386
+
+1eb45db7-8e4d-49ae-9e41-ae97fb818c5a
+00:02:28.410 --> 00:02:30.870
+First up some automated tools.
+
+NOTE Confidence: 0.882842600345612
+
+d0155f4b-50fe-49af-b155-1dfae09f6421
+00:02:31.560 --> 00:02:36.900
+Um? There are several automated
+testing tools that I used to
+
+NOTE Confidence: 0.882842600345612
+
+e9b01175-64e5-4357-b9b6-b0132851dce7
+00:02:36.900 --> 00:02:41.372
+test your sights of. Most common
+one that I leverage is a browser
+
+NOTE Confidence: 0.882842600345612
+
+bac26005-ae23-4091-8e61-68a48071106c
+00:02:41.372 --> 00:02:42.404
+plugin called axe.
+
+NOTE Confidence: 0.879464089870453
+
+3eaacd64-0556-47a7-b5da-95acc2a455c0
+00:02:43.130 --> 00:02:48.662
+By great company called DQ. Many
+of the issues that are cited
+
+NOTE Confidence: 0.879464089870453
+
+25acafaa-6666-47bd-876a-1c5db1a14502
+00:02:48.662 --> 00:02:50.967
+during testing stem from this
+
+NOTE Confidence: 0.937529385089874
+
+8190dec9-a673-49ab-beb5-0ea7c78aa890
+00:02:50.967 --> 00:02:55.800
+plugin. After this call, I want
+all of you to install it and
+
+NOTE Confidence: 0.937529385089874
+
+bc513d93-5678-4569-8f96-6ff04e822b93
+00:02:55.800 --> 00:02:58.935
+start using it so that we can
+start speaking a common
+
+NOTE Confidence: 0.937529385089874
+
+e8f36b1b-fd07-4175-bd77-11b1d143c8a1
+00:02:58.935 --> 00:03:00.360
+language. When it comes to
+
+NOTE Confidence: 0.892462074756622
+
+8465c795-fffd-4dd2-b1c2-e952f04944e5
+00:03:00.360 --> 00:03:03.782
+Accessibility issues. Um, I'll
+be sharing this presentation
+
+NOTE Confidence: 0.892462074756622
+
+cf8326ce-e5e7-43eb-bbe2-303458e1c608
+00:03:03.782 --> 00:03:08.126
+afterwards, so you'll have all
+the links that you need to start
+
+NOTE Confidence: 0.892462074756622
+
+7e00685e-445b-4a32-bf30-8819d172c21b
+00:03:08.126 --> 00:03:12.108
+downloading this stuff, but I
+thought I would just talk about
+
+NOTE Confidence: 0.892462074756622
+
+f3572b91-dacd-4fdc-94c9-cd5041923c6b
+00:03:12.108 --> 00:03:17.176
+each tool that I use and then
+just give you kind of a brief
+
+NOTE Confidence: 0.892462074756622
+
+3d68064c-5eaf-439c-a9f5-9df3caad46c5
+00:03:17.176 --> 00:03:21.520
+demonstration of how it works.
+So with X, all you really have
+
+NOTE Confidence: 0.892462074756622
+
+f153050b-a913-45b5-8911-38ff4503ac89
+00:03:21.520 --> 00:03:24.054
+to do after you install it is
+
+NOTE Confidence: 0.87458997964859
+
+91c968c0-8030-4061-ab82-7def69e6ff0e
+00:03:24.054 --> 00:03:28.830
+inspect your. On your page and
+you'll see the X plugin right
+
+NOTE Confidence: 0.87458997964859
+
+4ab6c4d4-c168-497a-81a8-599d557df66b
+00:03:28.830 --> 00:03:31.245
+here and you just click it on.
+
+NOTE Confidence: 0.917331516742706
+
+bc4d0d23-904c-48e6-a8d7-82eef919176e
+00:03:31.760 --> 00:03:34.650
+And you analyze the page.
+
+NOTE Confidence: 0.949235558509827
+
+28391e8f-37fd-4b32-9aab-239ef6cd2ece
+00:03:35.360 --> 00:03:40.552
+And then it comes up with
+several issues that could be
+
+NOTE Confidence: 0.949235558509827
+
+236f84d3-57bd-4e59-acd1-01b4eea06a30
+00:03:40.552 --> 00:03:42.440
+potential barriers to access.
+
+NOTE Confidence: 0.932849884033203
+
+fb6b2dbf-3292-477b-a240-783d9c09fb61
+00:03:43.180 --> 00:03:47.720
+Uhm, you can organize the issues
+by violations review best
+
+NOTE Confidence: 0.932849884033203
+
+1805c411-47b4-41d4-8dd3-99c538576d70
+00:03:47.720 --> 00:03:51.806
+practices. Naturally, violations
+are going to be the most
+
+NOTE Confidence: 0.932849884033203
+
+24d5ce59-b9e9-4206-a91f-2cc4abad01d4
+00:03:51.806 --> 00:03:54.984
+important ones for us to try to
+
+NOTE Confidence: 0.909067273139954
+
+f8030811-07be-499d-97b8-31697e367f02
+00:03:54.984 --> 00:03:59.444
+address. Also, I would
+definitely focus on those. Um,
+
+NOTE Confidence: 0.909067273139954
+
+f8ffa92b-2d1f-4933-9cd3-1e5fb3272433
+00:03:59.444 --> 00:04:03.987
+it's a nice cool and that you
+can, uh, highlight specific
+
+NOTE Confidence: 0.909067273139954
+
+03575df5-ac05-4358-a231-bb4b685dc414
+00:04:03.987 --> 00:04:07.704
+issues. You can inspect the
+particular nodes that it's
+
+NOTE Confidence: 0.909067273139954
+
+0c10d568-2418-4b0e-8a1e-6ba3dc851f5b
+00:04:07.704 --> 00:04:12.247
+concerned with if you're not
+sure about the issue, they have
+
+NOTE Confidence: 0.909067273139954
+
+39da5c86-bce8-4aca-ac77-28204568c094
+00:04:12.247 --> 00:04:16.377
+a great learning resource on
+their site that you can.
+
+NOTE Confidence: 0.87821888923645
+
+898258cf-24b2-4f91-989d-92e1bc2a18d9
+00:04:17.030 --> 00:04:21.470
+Um, go to and learn more about
+that particular issue, and if
+
+NOTE Confidence: 0.87821888923645
+
+ed29376d-ead3-4ccf-9dab-06613cd1319c
+00:04:21.470 --> 00:04:25.910
+you're still not sure, you can
+always reach out to someone like
+
+NOTE Confidence: 0.87821888923645
+
+d0e822c6-b1aa-405d-a127-95e321a9bc56
+00:04:25.910 --> 00:04:30.350
+me or we're back here or even
+Dan Green. And that's pretty
+
+NOTE Confidence: 0.379060178995132
+
+4c1cdd30-126d-4741-9c2e-404272e1880d
+00:04:30.350 --> 00:04:32.440
+much it. Hum.
+
+NOTE Confidence: 0.883303225040436
+
+646f6ac2-ffbd-45ab-b062-4be9b225c935
+00:04:33.060 --> 00:04:39.066
+Yeah, it's a. It's the, UM, the
+issues that its eyes are really
+
+NOTE Confidence: 0.883303225040436
+
+9bf33391-0421-4aee-8d2e-038640a68a81
+00:04:39.066 --> 00:04:43.686
+really really good and they're
+always saying on top of
+
+NOTE Confidence: 0.883303225040436
+
+4730e226-6bfb-4232-bd92-e06fefd3061b
+00:04:43.686 --> 00:04:48.306
+Accessibility over there DQ. So
+it's really become an invaluable
+
+NOTE Confidence: 0.883303225040436
+
+6790f2e6-e68d-4c1b-a13e-b2198d860f43
+00:04:48.306 --> 00:04:52.002
+tool in my toolbox so I use it
+
+NOTE Confidence: 0.754352927207947
+
+ef28cedc-a65b-4940-b1b8-c99a14bdd483
+00:04:52.002 --> 00:04:55.910
+frequently. Also comes in a uhm.
+
+NOTE Confidence: 0.888746321201324
+
+fc82a974-797f-4a63-b6e7-4e1a185c08f0
+00:04:56.880 --> 00:04:58.380
+Let's jump back here for a
+
+NOTE Confidence: 0.896742284297943
+
+71df20f2-556a-44e5-8035-4d06b73fe642
+00:04:58.380 --> 00:05:02.976
+second. Uh, command line flavor
+if that's what you're interested
+
+NOTE Confidence: 0.896742284297943
+
+f9ff8c90-15b5-4e1c-bea2-a41943677bed
+00:05:02.976 --> 00:05:08.064
+in using, I have to have node
+installed on your system before
+
+NOTE Confidence: 0.896742284297943
+
+848def18-ea6e-4dcb-a963-50a0907e7976
+00:05:08.064 --> 00:05:13.576
+running it, but once you do have
+it running, it's just a simple
+
+NOTE Confidence: 0.896742284297943
+
+f997bff0-c6be-45fe-902f-4ac6c0d17338
+00:05:13.576 --> 00:05:18.240
+matter of typing in acts. Oh,
+and this is sometimes the
+
+NOTE Confidence: 0.896742284297943
+
+acc90c92-4d91-4ae9-a22f-5849d1a3ab76
+00:05:18.240 --> 00:05:22.904
+command line tool is better
+because you can pass in multiple
+
+NOTE Confidence: 0.896742284297943
+
+8a3282c1-13ae-491b-b67e-737fb354aabc
+00:05:22.904 --> 00:05:27.144
+pages. So if I wanted to test
+the say, TMP.
+
+NOTE Confidence: 0.663850963115692
+
+fa83773e-8bac-4706-b748-8284c52964d1
+00:05:27.440 --> 00:05:33.530
+Hum. I just type in bash
+and then do TPS colon.
+
+NOTE Confidence: 0.829778432846069
+
+4bc7cc2d-f289-4d6c-83c8-dfebc0619f84
+00:05:34.250 --> 00:05:39.528
+Tmp.com slash. I think it's jobs
+so and then just, you know you
+
+NOTE Confidence: 0.829778432846069
+
+0be0cd80-f686-46e8-8e21-f8ebeaf078fe
+00:05:39.528 --> 00:05:44.400
+could paste multiple pages in
+there and then it'll run and you
+
+NOTE Confidence: 0.829778432846069
+
+a55d8df6-6613-427d-8910-d52bb7b87153
+00:05:44.400 --> 00:05:48.866
+can even output it to a JSON
+file or text file.
+
+NOTE Confidence: 0.665742754936218
+
+46ae458a-e498-49af-b6a9-d95289df1149
+00:05:49.740 --> 00:05:52.176
+Give it a second to run.
+
+NOTE Confidence: 0.599958539009094
+
+803f5436-bee2-4bae-ab18-86c28eec4a06
+00:05:55.020 --> 00:06:01.086
+It Mr T in HTTP.
+Sorry I messed up.
+
+NOTE Confidence: 0.285780876874924
+
+d9acf7fa-afbb-423c-8cfd-279477d06c1a
+00:06:01.690 --> 00:06:04.240
+Now.
+
+NOTE Confidence: 0.945402264595032
+
+5d7e4e91-9016-49e5-80db-471f4704653a
+00:06:05.430 --> 00:06:06.669
+Well, that's interesting.
+
+NOTE Confidence: 0.907848060131073
+
+2d411071-d2b1-40b6-b9bc-05eb67c9ee21
+00:06:09.090 --> 00:06:12.181
+It looks like it still work
+though. Yeah, it probably it
+
+NOTE Confidence: 0.907848060131073
+
+35cba91f-a6f8-465b-ad7f-57bd22c7c613
+00:06:12.181 --> 00:06:15.834
+probably did the first one, but
+not the second one, but you kind
+
+NOTE Confidence: 0.907848060131073
+
+44cb10dc-5cb3-4e20-a925-7b1a17bc91c0
+00:06:15.834 --> 00:06:19.487
+of get the general idea, but I
+won't go into it that much.
+
+NOTE Confidence: 0.866781294345856
+
+0fd8f185-f164-4b02-9ff2-36e9e1b8e856
+00:06:21.090 --> 00:06:26.060
+I. So that's X axis great.
+Definitely use it. Download it
+
+NOTE Confidence: 0.866781294345856
+
+7c947950-d057-4925-ab3e-587b4df37f6a
+00:06:26.060 --> 00:06:30.610
+after this column will be very
+very happy with it. Um, Next up
+
+NOTE Confidence: 0.0443471856415272
+
+0b02ff62-7575-4f24-af8b-fd9725d5c1c0
+00:06:30.610 --> 00:06:33.080
+is lighthouse. Um?
+
+NOTE Confidence: 0.896148324012756
+
+a1a4a216-d12a-434c-b3bd-de9b6eac9895
+00:06:34.740 --> 00:06:38.350
+Are Google Chrome schedules and
+close built in auditing tools
+
+NOTE Confidence: 0.896148324012756
+
+67d63114-a35d-4889-b7b1-7e1de96e6674
+00:06:38.350 --> 00:06:42.321
+besides being able to test for
+performance as CEO and best
+
+NOTE Confidence: 0.896148324012756
+
+1e79e4dc-825d-4fc7-8790-1b1e35417798
+00:06:42.321 --> 00:06:45.931
+practices, you can also test for
+Accessibility issues. I'm sure
+
+NOTE Confidence: 0.896148324012756
+
+951c3f44-421d-492a-99a5-89ec8425dec6
+00:06:45.931 --> 00:06:50.263
+some of you have used lighthouse
+already. Some of our clients use
+
+NOTE Confidence: 0.896148324012756
+
+60d050e2-2db9-4f1d-87e4-b87dffba74f1
+00:06:50.263 --> 00:06:54.234
+lighthouse and they like to
+torture us, but the results, but
+
+NOTE Confidence: 0.896148324012756
+
+ecbe2120-6fe0-4153-a415-7707b7952954
+00:06:54.234 --> 00:06:58.205
+it's definitely a good tool and
+that could be accessed under
+
+NOTE Confidence: 0.896148324012756
+
+68e29615-d09c-4c17-9627-c2b785de9560
+00:06:58.205 --> 00:07:02.537
+audits. And if you go to audits
+and you check off everything
+
+NOTE Confidence: 0.896148324012756
+
+93973e56-b68d-45bc-b246-8bdf2d004da1
+00:07:02.537 --> 00:07:05.064
+else and you just want to focus
+
+NOTE Confidence: 0.850507140159607
+
+f5eb7cb4-c6df-4b6d-a2e7-43bab877dd8d
+00:07:05.064 --> 00:07:08.650
+on Accessibility. Then you just
+check that one off and run the
+
+NOTE Confidence: 0.822395861148834
+
+318ee0be-4633-41b2-a077-c5ed6e4e54c2
+00:07:08.650 --> 00:07:13.124
+audit. And it should produce
+some interesting results. Let's
+
+NOTE Confidence: 0.822395861148834
+
+dbaf0056-b0bf-4695-850c-da34e7f1d3ed
+00:07:13.124 --> 00:07:14.936
+see how TMP does.
+
+NOTE Confidence: 0.833335876464844
+
+bcaafd11-ef23-45f2-9a70-89eac838d50f
+00:07:16.420 --> 00:07:20.908
+Not too bad. Background colors
+always an issue.
+
+NOTE Confidence: 0.904086470603943
+
+2b7bfa01-de4a-4c52-98a5-4b195e397339
+00:07:21.670 --> 00:07:26.623
+Add 91%. Don't be lulled into a
+false sense of security when you
+
+NOTE Confidence: 0.904086470603943
+
+37db3cd4-3999-4082-89de-af3e34820eaf
+00:07:26.623 --> 00:07:31.195
+see some of these numbers you
+know you might have a high
+
+NOTE Confidence: 0.904086470603943
+
+4d3a39e9-b1a3-41c3-ae97-01b10aa8ea35
+00:07:31.195 --> 00:07:34.624
+number, but as we'll get into
+shortly, Accessibility testing
+
+NOTE Confidence: 0.904086470603943
+
+b7732f2b-66f7-4170-9823-5125318bee62
+00:07:34.624 --> 00:07:39.958
+is not a line on just automated
+testing. Do you have to do some
+
+NOTE Confidence: 0.904086470603943
+
+8e6578d3-d33d-4c7e-adf6-53a41e406a3e
+00:07:39.958 --> 00:07:44.530
+manual testing in order to get
+more Fuller picture of? You know
+
+NOTE Confidence: 0.904086470603943
+
+de3f7842-11ba-4f9b-a417-63c9a640b2c2
+00:07:44.530 --> 00:07:46.816
+the issue just like man have.
+
+NOTE Confidence: 0.768074572086334
+
+a8db8835-4aff-4f2f-9580-8ee708e3385b
+00:07:47.600 --> 00:07:55.440
+Next up is wave. I'm
+sure many of you are
+
+NOTE Confidence: 0.768074572086334
+
+25da3760-a9e4-4dd8-ac65-23ac58e25b9e
+00:07:55.440 --> 00:08:01.712
+familiar with this one. The
+wave toolbar plugin.
+
+NOTE Confidence: 0.876417279243469
+
+fa0f3c7c-9805-4ee9-b481-d7496b4972cf
+00:08:02.220 --> 00:08:04.410
+Produce is pretty solid results.
+
+NOTE Confidence: 0.921221733093262
+
+6296399d-6b9a-4acf-b87b-cc577e7f22a4
+00:08:04.970 --> 00:08:08.570
+Access ability can be very
+subjective at times, so each
+
+NOTE Confidence: 0.921221733093262
+
+7ca13a11-6c1a-4d79-a1ac-8eb65433c074
+00:08:08.570 --> 00:08:12.170
+tool in our Arsenal may
+interpret what CAD guidelines a
+
+NOTE Confidence: 0.921221733093262
+
+968b4ada-684e-400e-b31e-d1dba3ca2f5a
+00:08:12.170 --> 00:08:15.770
+little differently. This is not
+necessarily a bad thing though
+
+NOTE Confidence: 0.921221733093262
+
+90b8cf65-5617-43ce-a4ab-a726bc354e3d
+00:08:15.770 --> 00:08:20.810
+is I believe it. It's a good.
+It's good to always get a second
+
+NOTE Confidence: 0.916540741920471
+
+85e6d10f-321b-4f09-8976-7b224b6feda3
+00:08:20.810 --> 00:08:25.090
+opinion. When it comes to wave,
+uh, there is another sadder
+
+NOTE Confidence: 0.916540741920471
+
+0747f34f-505c-4e08-bebb-3bb1cbffafad
+00:08:25.090 --> 00:08:28.330
+reason why we should test with
+this particular tool.
+
+NOTE Confidence: 0.901276528835297
+
+eff3d38f-76a7-4fc1-8f77-ed0fe7a45271
+00:08:28.980 --> 00:08:33.264
+And that is because it has
+become a favorite tool for law
+
+NOTE Confidence: 0.901276528835297
+
+bde5155d-3cbe-4503-b6b5-307e88004bd3
+00:08:33.264 --> 00:08:36.477
+firms seeking to scare companies
+into their allegation. And
+
+NOTE Confidence: 0.901276528835297
+
+adbccc4a-0455-4e5b-b2ff-2709fa054500
+00:08:36.477 --> 00:08:41.118
+hopefully when a settlement are
+so, if we kind of clean in this
+
+NOTE Confidence: 0.901276528835297
+
+26184817-1da5-4668-84d6-343f234162fb
+00:08:41.118 --> 00:08:45.759
+tool, we lower the risk of that
+happening in the past few years,
+
+NOTE Confidence: 0.901276528835297
+
+6af20122-2428-493d-8cb5-f61bed96bc52
+00:08:45.759 --> 00:08:50.043
+like industry has seen a large
+uptick in lawsuits. Many of them
+
+NOTE Confidence: 0.901276528835297
+
+26e0b336-4f3d-4a2f-8c75-cf38cbcf09bb
+00:08:50.043 --> 00:08:52.542
+are legitimate issues concerning
+digital inclusion and
+
+NOTE Confidence: 0.901276528835297
+
+12f0b6ee-0a3c-4e2b-93c9-19c15e63a95e
+00:08:52.542 --> 00:08:56.469
+Accessibility, but many are not.
+These are often called and I'm
+
+NOTE Confidence: 0.901276528835297
+
+e19a610e-bdde-408c-bf7d-97447a3cbeb3
+00:08:56.469 --> 00:09:00.039
+sure you've heard the sound
+forge drive by lawsuits with
+
+NOTE Confidence: 0.691013693809509
+
+803648f9-89bd-489d-bb10-8d35d29ab46d
+00:09:00.039 --> 00:09:01.700
+drive by. Litigation.
+
+NOTE Confidence: 0.896187007427216
+
+598430fe-367f-4259-9ba1-6e4dd384e3db
+00:09:02.280 --> 00:09:04.960
+So yeah, it's it's some.
+
+NOTE Confidence: 0.89509505033493
+
+d229140f-b7da-438a-9d62-aaff260cc6d7
+00:09:05.470 --> 00:09:09.598
+It's, uh, it's pretty intense
+out there right now, so we have
+
+NOTE Confidence: 0.89509505033493
+
+166eed0c-e874-46b9-8ee6-044710face80
+00:09:09.598 --> 00:09:14.070
+to be careful. Try to lower risk
+for our clients, and using the
+
+NOTE Confidence: 0.89509505033493
+
+524f2483-7901-494b-ace9-5994aff207d3
+00:09:14.070 --> 00:09:17.854
+wave and getting a result of
+zero errors is usually certainly
+
+NOTE Confidence: 0.89509505033493
+
+40bc3984-b9f7-4c6b-8d87-5bc03e3a3817
+00:09:17.854 --> 00:09:21.638
+good for your website. But it
+also means you're probably going
+
+NOTE Confidence: 0.89509505033493
+
+ebc31401-2368-4225-b657-fff3b2be1c66
+00:09:21.638 --> 00:09:26.454
+to get less less knocks at the
+door from lawyers, so we want to
+
+NOTE Confidence: 0.89509505033493
+
+2204836c-e116-4774-85df-cbfb7ebeb79f
+00:09:26.454 --> 00:09:28.174
+make sure that you're testing
+
+NOTE Confidence: 0.876008570194244
+
+ce7a0884-6610-41b7-b7c3-af17946963a6
+00:09:28.174 --> 00:09:32.293
+with wave. After the plugin is
+installed, uh, it usually. Let's
+
+NOTE Confidence: 0.876008570194244
+
+c965c04a-38bc-4102-bced-f76329d502ff
+00:09:32.293 --> 00:09:37.194
+see where is it here? Yeah, so
+it's it's right. It's right up
+
+NOTE Confidence: 0.81244683265686
+
+894da615-88c3-42b5-b8fe-8839471c2378
+00:09:37.194 --> 00:09:42.810
+here. And you just vanish.
+Handle passes. You were all over
+
+NOTE Confidence: 0.81244683265686
+
+99563bcc-9f03-4210-8bd0-b4830f1f071f
+00:09:42.810 --> 00:09:44.614
+to the wave toolbar.
+
+NOTE Confidence: 0.899176120758057
+
+67b3224e-1a26-4412-9032-a8a276bfbb87
+00:09:45.130 --> 00:09:48.502
+And we're coming up good here.
+Zero errors, so you always want
+
+NOTE Confidence: 0.899176120758057
+
+984926df-2ce8-4247-80ae-cf9c580b7452
+00:09:48.502 --> 00:09:51.312
+to make sure that you're
+addressing any errors that you
+
+NOTE Confidence: 0.899176120758057
+
+2bdb61d1-9faf-4657-a438-d33cc58e759a
+00:09:51.312 --> 00:09:52.717
+might find in this tool.
+
+NOTE Confidence: 0.748361647129059
+
+e2954deb-5fa9-4a6a-89c2-f6a9a2cfa919
+00:09:55.270 --> 00:10:05.070
+Nice.
+Next up.
+
+NOTE Confidence: 0.95314759016037
+
+2145766b-d153-492e-a3bf-7f1b45748ab5
+00:10:06.220 --> 00:10:10.185
+Um? We have the web developer
+
+NOTE Confidence: 0.914111137390137
+
+c05633e0-c6de-4887-b21d-b8fdd4fd5359
+00:10:10.185 --> 00:10:14.186
+toolbar. Ah, the weather to the
+toolbar has many useful
+
+NOTE Confidence: 0.914111137390137
+
+6acb9f40-2058-4471-937f-981941784715
+00:10:14.186 --> 00:10:17.102
+Accessibility testing features
+in it that we often leverage.
+
+NOTE Confidence: 0.914111137390137
+
+3999ff4f-03c7-4a1d-8e40-1f6a32817180
+00:10:17.102 --> 00:10:20.990
+The two issues that I check with
+it are headings, an alternative
+
+NOTE Confidence: 0.914111137390137
+
+33339565-e043-4d0d-89cb-648f054294fa
+00:10:20.990 --> 00:10:25.526
+text values and you might want
+to do this too. So let me give
+
+NOTE Confidence: 0.914111137390137
+
+42f9223c-4235-46bb-9d97-896012439274
+00:10:25.526 --> 00:10:29.414
+you an example. I'm talking
+about. You know, I, I just want
+
+NOTE Confidence: 0.914111137390137
+
+cfbb5002-d221-4f8a-9bf5-d8e7b37f1eee
+00:10:29.414 --> 00:10:33.950
+to. I just want to say that I
+had. I had trouble finding bad
+
+NOTE Confidence: 0.914111137390137
+
+8679765d-cd7a-4b2d-b191-fe25d3c9db5e
+00:10:33.950 --> 00:10:37.514
+examples of our websites out
+there. You guys are doing. I
+
+NOTE Confidence: 0.914111137390137
+
+804dd4c1-bdf2-4066-824a-3dd197c36543
+00:10:37.514 --> 00:10:41.402
+just want to tell you that
+you're doing a really great job
+
+NOTE Confidence: 0.9122713804245
+
+b9d46cb7-15e1-4d6c-906d-35d215e2d465
+00:10:41.402 --> 00:10:45.480
+and certainly. Over the past
+couple of years, as we as we
+
+NOTE Confidence: 0.9122713804245
+
+4f51f8f8-8b33-437c-97ae-a2dcc07192dc
+00:10:45.480 --> 00:10:49.500
+grow and we would sure in this
+space where you know definitely
+
+NOTE Confidence: 0.9122713804245
+
+8805cc71-93a8-4c87-bacb-4db9c5e46ea9
+00:10:49.500 --> 00:10:53.185
+producing much more accessible
+sites. So I just want to, like
+
+NOTE Confidence: 0.9122713804245
+
+8c28ef15-f6ec-48bb-b255-3e011f21d78c
+00:10:53.185 --> 00:10:57.540
+you know, say that I'm grateful
+for all of the work that you
+
+NOTE Confidence: 0.9122713804245
+
+c06d2f56-bcdb-49ae-84dd-eba9fd81653c
+00:10:57.540 --> 00:11:01.895
+guys do and all the effort that
+you put into making your sites
+
+NOTE Confidence: 0.9122713804245
+
+c4e762fd-21b9-4580-b6af-4f192f8fcdff
+00:11:01.895 --> 00:11:05.915
+as iaccessible as the day it can
+be. If you really shows,
+
+NOTE Confidence: 0.9122713804245
+
+9e7eb44b-4949-4325-8431-aea52bdbf8ec
+00:11:05.915 --> 00:11:09.935
+especially when I go looking for
+it for a presentation and can't
+
+NOTE Confidence: 0.9122713804245
+
+f1f114d8-7368-484f-b90b-a6cc0c387716
+00:11:09.935 --> 00:11:11.610
+find anything, it certainly is.
+
+NOTE Confidence: 0.853271245956421
+
+f582cc64-fcfb-4b23-994d-3545cc31e5a7
+00:11:11.640 --> 00:11:16.775
+Testament to you know the good
+work that you guys are doing, so
+
+NOTE Confidence: 0.853271245956421
+
+ea2b7a7c-44e5-4942-ab81-c8c6ad2ed3fd
+00:11:16.775 --> 00:11:17.960
+keep it up.
+
+NOTE Confidence: 0.863497793674469
+
+f469f4b9-502f-43be-a6ed-2ce8a8680747
+00:11:18.500 --> 00:11:23.200
+Um in in using our this
+particular tool here, web
+
+NOTE Confidence: 0.863497793674469
+
+4fd5b316-d17c-43db-8a6e-3337bc40fc91
+00:11:23.200 --> 00:11:27.900
+developer toolbar again, this
+one's been around for years. I
+
+NOTE Confidence: 0.863497793674469
+
+6650831d-730c-4d9c-be23-60571d3e61c9
+00:11:27.900 --> 00:11:34.480
+mean on if you if you open it
+up and you click on information
+
+NOTE Confidence: 0.863497793674469
+
+efb6e0af-3533-4f0a-9d6c-592666282ff3
+00:11:34.480 --> 00:11:37.300
+and you go to view document
+
+NOTE Confidence: 0.895282208919525
+
+a8ea3f63-d968-46dc-8f18-67db93236920
+00:11:37.300 --> 00:11:44.106
+outline. This is going to give
+you a really good view of your
+
+NOTE Confidence: 0.895282208919525
+
+8ac3fc42-159e-492d-852e-5598df0f45ac
+00:11:44.106 --> 00:11:47.890
+heading levels. Heading levels
+are very, very important.
+
+NOTE Confidence: 0.531968533992767
+
+d6203d36-1de1-4d65-aca1-15637fd6f814
+00:11:47.900 --> 00:11:50.279
+A lot of.
+
+NOTE Confidence: 0.140680655837059
+
+0004bb5b-ece8-465d-98d8-458527f4ff36
+00:11:50.280 --> 00:11:54.020
+Blind you. To
+
+NOTE Confidence: 0.914575159549713
+
+5d30e5b8-04c6-4e08-bef2-825b3c243a5d
+00:11:54.020 --> 00:11:59.660
+um? Navigate your site so it's
+it's really super important that
+
+NOTE Confidence: 0.914575159549713
+
+00648452-b803-427e-853a-3299df663bb7
+00:11:59.660 --> 00:12:05.016
+we get them right up and this
+tool is really good because it
+
+NOTE Confidence: 0.914575159549713
+
+f36ab10a-46f6-42ec-90cd-272c86edf630
+00:12:05.016 --> 00:12:09.548
+just gives you a nice visual
+representation of the outline of
+
+NOTE Confidence: 0.914575159549713
+
+d9457958-155b-4939-ba42-4f45151a5084
+00:12:09.548 --> 00:12:14.492
+the page and the hierarchy of
+the headings that are in place
+
+NOTE Confidence: 0.914575159549713
+
+4b29c221-cf3f-4d32-a489-128ce97054c0
+00:12:14.492 --> 00:12:16.552
+that you can easily see.
+
+NOTE Confidence: 0.917673230171204
+
+dd3a2570-2495-4494-aaba-dfbf11838664
+00:12:16.630 --> 00:12:19.930
+You know that there are some
+missing headings Here. In that
+
+NOTE Confidence: 0.917673230171204
+
+1ba87249-51c6-4c19-bd42-5e58207e18e2
+00:12:19.930 --> 00:12:23.530
+page. It needs a little bit more
+work, so that's really, really
+
+NOTE Confidence: 0.917673230171204
+
+83a4aba6-cb3f-462c-b679-14848855f9d4
+00:12:23.530 --> 00:12:24.730
+really useful for Maine.
+
+NOTE Confidence: 0.873509585857391
+
+4cfaac8f-7d42-4adf-84b5-c4c1f435820e
+00:12:25.390 --> 00:12:31.266
+As a tester on the other thing
+that I use for our images.
+
+NOTE Confidence: 0.716889798641205
+
+61b32c88-9080-4491-95ff-90b7c8912d24
+00:12:31.880 --> 00:12:37.220
+See jump to briefly on here. We
+find a page with a lot of images
+
+NOTE Confidence: 0.249303624033928
+
+e16105f7-84c0-4e02-9d31-659edf729870
+00:12:37.220 --> 00:12:39.330
+on it. 2.
+
+NOTE Confidence: 0.774535417556763
+
+aee1a963-321a-44c0-bca9-2ab50a2e936d
+00:12:39.900 --> 00:12:41.320
+Do a good test here.
+
+NOTE Confidence: 0.8022181391716
+
+0e5dd830-4828-4fd0-bc34-74a8deb86611
+00:12:51.400 --> 00:12:57.220
+Will give this one a shot. OK so
+here I would come here and I
+
+NOTE Confidence: 0.8022181391716
+
+bf6eca40-3ad3-44ce-9959-471631f377b7
+00:12:57.220 --> 00:12:59.160
+would go to images and.
+
+NOTE Confidence: 0.846944808959961
+
+cc4a2dc5-327a-43e8-aab9-a392a212319e
+00:12:59.880 --> 00:13:05.215
+Display all the attributes so
+it's Gonna display all the all
+
+NOTE Confidence: 0.846944808959961
+
+6b88d5cb-0e5b-4004-80c5-d9b6c03f91e6
+00:13:05.215 --> 00:13:10.065
+attributes on the page. OK.
+Images with texting them should
+
+NOTE Confidence: 0.846944808959961
+
+ab8c4e5a-365d-47e7-ba18-17dea7f1fefc
+00:13:10.065 --> 00:13:12.490
+be usually verbatim, so that's
+
+NOTE Confidence: 0.760470032691956
+
+1b3245f1-fd73-40d3-b9ca-57452b23f701
+00:13:12.490 --> 00:13:17.616
+good. This looks like a
+background. Well, OK, that's
+
+NOTE Confidence: 0.89490532875061
+
+ca3a40ee-6a04-4c71-8d6c-d7d7b015ab7f
+00:13:17.616 --> 00:13:23.228
+text alright. So this is good.
+This is good. This is all good.
+
+NOTE Confidence: 0.89490532875061
+
+211549d8-59f6-4441-ab7a-130e7787e21e
+00:13:23.228 --> 00:13:28.520
+UM, this is just an easy way to
+see a. You know if you're
+
+NOTE Confidence: 0.89490532875061
+
+40cbd6c8-4026-42f9-a9f8-937d07193e4f
+00:13:28.520 --> 00:13:32.678
+missing anything. OK, now here's
+a bad one. Alt equals article
+
+NOTE Confidence: 0.89490532875061
+
+07f05031-53ae-4e73-8d81-0dfbbbbcfcdc
+00:13:32.678 --> 00:13:35.702
+immediately. I would cite that
+as an issue.
+
+NOTE Confidence: 0.8857701420784
+
+2a6d3f58-a8d7-415c-882c-f1f7e2369adc
+00:13:36.210 --> 00:13:40.510
+Uhm, you know that should
+probably. This image is probably
+
+NOTE Confidence: 0.8857701420784
+
+db37f992-50a3-433c-b438-d7f6eec256d1
+00:13:40.510 --> 00:13:44.810
+more decorative in nature, so it
+probably shouldn't have text.
+
+NOTE Confidence: 0.8857701420784
+
+07fb0e7b-bdc5-4a2c-9bfd-c05975c6715c
+00:13:44.810 --> 00:13:49.110
+And certainly I'm always looking
+for, you know, links and.
+
+NOTE Confidence: 0.867757499217987
+
+241e0885-42b2-4639-a2f2-0c91bda2cde3
+00:13:50.260 --> 00:13:53.530
+It images that are surrounded
+by hyperlinks should always be
+
+NOTE Confidence: 0.867757499217987
+
+37da9051-d869-4930-a76c-29217e6b1eb6
+00:13:53.530 --> 00:13:56.146
+always have some sort of
+functional alternative text
+
+NOTE Confidence: 0.867757499217987
+
+1cbe130a-3952-447f-8bff-c42436aa4bb0
+00:13:56.146 --> 00:14:00.397
+in, so this tool is invaluable
+for that and it just allows me
+
+NOTE Confidence: 0.867757499217987
+
+cedbecb0-25a4-486d-85e7-dd339ef16dd7
+00:14:00.397 --> 00:14:03.667
+to easily stand the page and
+see if there's appropriate.
+
+NOTE Confidence: 0.867757499217987
+
+7c6b951a-7598-41bc-9ef0-1eef470891f6
+00:14:03.667 --> 00:14:07.264
+All text in their missing all
+fixed. I'm definitely use this
+
+NOTE Confidence: 0.867757499217987
+
+0d0f342d-afdb-4ee6-9ad5-e5dec654a3eb
+00:14:07.264 --> 00:14:09.226
+when you can very very useful.
+
+NOTE Confidence: 0.919452846050262
+
+2998894b-c80c-484e-b5e5-166cb6dafc45
+00:14:11.040 --> 00:14:14.520
+That's pretty much it when it
+comes to automated testing.
+
+NOTE Confidence: 0.919452846050262
+
+6dd576ee-144d-4fcd-a0be-8e991337e21a
+00:14:14.520 --> 00:14:19.392
+There a lot more tools that I
+cover here and we have this nice
+
+NOTE Confidence: 0.919452846050262
+
+0453f076-2382-4f0c-a2b6-99d9723c0940
+00:14:19.392 --> 00:14:23.568
+one called amp, but it's like
+really super robust and you guys
+
+NOTE Confidence: 0.919452846050262
+
+4b015f23-efef-4b0c-9c6a-a10f039852e0
+00:14:23.568 --> 00:14:28.092
+really don't need to use amp all
+the time. It certainly comes in
+
+NOTE Confidence: 0.919452846050262
+
+45bed4c8-b68e-4f3d-a4ac-caf1603b9256
+00:14:28.092 --> 00:14:31.224
+handy if you specialize in
+Accessibility testing and you're
+
+NOTE Confidence: 0.919452846050262
+
+1c24e884-f77f-44cd-b6c8-0557a56a014a
+00:14:31.224 --> 00:14:35.052
+producing more robust type of
+recording, but the tools that I
+
+NOTE Confidence: 0.919452846050262
+
+411f7ae1-9703-405b-b2ca-57bbea045677
+00:14:35.052 --> 00:14:39.228
+just outlined here are really
+all you need to get a general
+
+NOTE Confidence: 0.919452846050262
+
+40ebf559-90e8-4e24-8a44-b3109313039c
+00:14:39.228 --> 00:14:41.316
+sense for. You know what's going
+
+NOTE Confidence: 0.899656355381012
+
+16bd8b62-a61b-4d81-8eab-da72666e1ead
+00:14:41.316 --> 00:14:46.240
+on. With your code, so you could
+use them in your day-to-day
+
+NOTE Confidence: 0.899656355381012
+
+e611605b-5425-4219-875f-84358dd0518a
+00:14:46.240 --> 00:14:50.340
+work. That would be absolutely
+fantastic. Next step we have.
+
+NOTE Confidence: 0.862639307975769
+
+33404b91-4e48-4d9b-b8d1-4e10f7e4b45b
+00:14:50.900 --> 00:14:57.351
+Manual testing. And when it
+comes to colours, colours are a
+
+NOTE Confidence: 0.862639307975769
+
+4d8e2bc4-0235-43eb-a0d5-95f6d3210de9
+00:14:57.351 --> 00:15:02.730
+big issue in our work because
+they often suffer from low
+
+NOTE Confidence: 0.862639307975769
+
+85829d77-0354-46f2-97bc-170abd43a332
+00:15:02.730 --> 00:15:07.620
+contrast, low visibility, low
+bad legibility when it comes to
+
+NOTE Confidence: 0.862639307975769
+
+5c9a775e-73b6-41d8-9601-de60a394839b
+00:15:07.620 --> 00:15:14.466
+text. So we have to be mindful
+of this and a great tool out
+
+NOTE Confidence: 0.862639307975769
+
+4ffc30e6-2cbd-4ebc-a2d8-e5be6a52f50d
+00:15:14.466 --> 00:15:17.889
+there is one that I use called.
+
+NOTE Confidence: 0.893463373184204
+
+642bc696-aefd-4a6f-a75a-0865da1ec88d
+00:15:17.930 --> 00:15:25.310
+Color. Contrast analyzer, you
+can download it and run it on
+
+NOTE Confidence: 0.893463373184204
+
+d50ffd41-f4a5-40e0-a8f8-c175b0616ab3
+00:15:25.310 --> 00:15:31.346
+your site. You can go in and
+select colors which is useful
+
+NOTE Confidence: 0.893463373184204
+
+8856d459-ffd6-4183-a137-da486982e338
+00:15:31.346 --> 00:15:36.879
+and then you'll immediately see
+if it's going to pass certain
+
+NOTE Confidence: 0.893463373184204
+
+d693a7fe-31ad-4727-9327-0aeca343ff82
+00:15:36.879 --> 00:15:41.909
+guidelines where this tool comes
+in. Particularly useful is for
+
+NOTE Confidence: 0.893463373184204
+
+fdabe981-2dc5-4f25-aa89-49e8e5152388
+00:15:41.909 --> 00:15:46.939
+cops, cops when you're getting
+costs when you're getting PDF
+
+NOTE Confidence: 0.893463373184204
+
+dd816cad-f806-4f69-b442-a5f0ef7e2931
+00:15:46.939 --> 00:15:49.454
+and Jpeg's to check for
+
+NOTE Confidence: 0.880026698112488
+
+2945e07f-58a2-4e19-bfb6-ebc5dad3ecf9
+00:15:49.454 --> 00:15:53.622
+Accessibility issues. Ideally
+you would love to have the PS DS
+
+NOTE Confidence: 0.880026698112488
+
+6569c416-0890-4b82-b21b-5f9243f1ac20
+00:15:53.622 --> 00:15:58.146
+at that point so you can go in
+and see which colors that
+
+NOTE Confidence: 0.880026698112488
+
+c1b77680-05df-466e-9267-35b352483ec3
+00:15:58.146 --> 00:16:01.974
+actually using, but this is
+served me pretty well when it
+
+NOTE Confidence: 0.880026698112488
+
+3e3288d0-5a45-4aa5-b308-2b3220beb6a3
+00:16:01.974 --> 00:16:06.846
+comes to just testing comp, so
+I'm able to get the comp and if
+
+NOTE Confidence: 0.880026698112488
+
+d0887193-bb07-4a43-a3f5-e41dabe2eb38
+00:16:06.846 --> 00:16:11.718
+I'm looking at it and I see that
+something looks off I just, you
+
+NOTE Confidence: 0.880026698112488
+
+ba7d4a5f-8817-4f63-a0aa-ccc9bfcdc793
+00:16:11.718 --> 00:16:14.154
+know, kind of pull this out and.
+
+NOTE Confidence: 0.875581920146942
+
+edb272fa-d47d-49bc-a7b5-2a19cac594de
+00:16:14.160 --> 00:16:19.476
+Start selecting colors to see if
+they're going to be an issue
+
+NOTE Confidence: 0.875581920146942
+
+50cdbe57-d028-4828-92bc-8b136b679cab
+00:16:19.476 --> 00:16:24.792
+later on. So very very useful.
+Definitely use it. You can even
+
+NOTE Confidence: 0.875581920146942
+
+07772cd3-1f22-479f-add5-107e73e20089
+00:16:24.792 --> 00:16:30.108
+test stuff in photo shop. You
+already have that. Just give you
+
+NOTE Confidence: 0.912788450717926
+
+40cb9271-9d4c-41e3-8cbf-fdb3a66efe0a
+00:16:30.108 --> 00:16:34.190
+a brief. Example here
+what I'm talking about.
+
+NOTE Confidence: 0.869943082332611
+
+877ef54c-f612-45aa-987d-65604996fbac
+00:16:35.780 --> 00:16:42.605
+Here we have a mock up for
+massage envy and there are a
+
+NOTE Confidence: 0.869943082332611
+
+ec0a214c-1760-4202-82d9-e524ec89fd57
+00:16:42.605 --> 00:16:48.380
+couple of things that you can do
+in photo shop too.
+
+NOTE Confidence: 0.862628102302551
+
+fbed4478-309c-48e1-96f9-3913ad8d834b
+00:16:48.980 --> 00:16:55.064
+See there gonna be any contrast
+issues? One of the things that's
+
+NOTE Confidence: 0.862628102302551
+
+cf7dcbb2-8ddc-4eeb-a480-bf759c7336a2
+00:16:55.064 --> 00:17:01.148
+Super Duper easy to do is go
+to image and go to.
+
+NOTE Confidence: 0.765380680561066
+
+ea53bde9-b558-48b8-8623-133f1079c783
+00:17:01.690 --> 00:17:05.650
+Modan simply throw it into
+
+NOTE Confidence: 0.882827937602997
+
+84ddf330-4214-438f-8736-0465680b2e2d
+00:17:05.650 --> 00:17:10.832
+grayscale alright? Yeah yeah
+Yeah Alright. So when you throw
+
+NOTE Confidence: 0.882827937602997
+
+beff59ee-506f-43c8-ba05-04111c9b156f
+00:17:10.832 --> 00:17:14.424
+something into grayscale
+immediately, you'll be able to
+
+NOTE Confidence: 0.882827937602997
+
+cac23378-3457-4d29-9f65-2a4758bb6ec2
+00:17:14.424 --> 00:17:17.118
+get a general sense for you
+
+NOTE Confidence: 0.844002544879913
+
+0d062254-153d-45a4-845b-d5922cf85ffc
+00:17:17.118 --> 00:17:21.827
+know. For 4904 ground text over
+background text, it might
+
+NOTE Confidence: 0.844002544879913
+
+2ee0fc51-0456-499a-9696-fde2e9843a28
+00:17:21.827 --> 00:17:27.030
+potentially be an issue here,
+even though the font size is
+
+NOTE Confidence: 0.844002544879913
+
+dc3cf976-1da7-42c6-a4ad-58447fb1f12f
+00:17:27.030 --> 00:17:29.395
+big, could still potentially be.
+
+NOTE Confidence: 0.801836252212524
+
+9163bb24-74ed-4579-98fa-2cee9727bdaa
+00:17:29.410 --> 00:17:33.365
+Problem you know here, maybe
+
+NOTE Confidence: 0.881243407726288
+
+ac8e5fbb-ce46-47fe-a8dd-e73540785288
+00:17:33.365 --> 00:17:39.066
+you know. So you know it's it's
+so simple to do, you know. And
+
+NOTE Confidence: 0.881243407726288
+
+5a38120e-2718-46b5-a018-193498fb6d59
+00:17:39.066 --> 00:17:43.182
+then you know you bring this
+stuff back to the team and
+
+NOTE Confidence: 0.881243407726288
+
+e5a1c5b7-7d5d-41ea-8a76-f9129e3e49a3
+00:17:43.182 --> 00:17:47.298
+hopefully will change it. Uh,
+another thing that you can do in
+
+NOTE Confidence: 0.667887151241302
+
+6bb8452f-6309-4c32-90f2-2fc52c57532d
+00:17:47.298 --> 00:17:50.660
+photo shop. Here is you
+
+NOTE Confidence: 0.847124516963959
+
+8457e66c-ce1c-47e3-a1df-68565ae46da3
+00:17:50.660 --> 00:17:57.196
+can uhm. You can, uh,
+for shop has a little known
+
+NOTE Confidence: 0.847124516963959
+
+e3b5f186-2176-4d3f-8908-6697283aa2a1
+00:17:57.196 --> 00:18:01.536
+technique to prove comps for
+common forms of color blindness,
+
+NOTE Confidence: 0.774066746234894
+
+a489e9bc-a870-4825-a216-5c750d930a52
+00:18:01.536 --> 00:18:08.096
+such as. Duterte Nokia, I
+can't pronounce that that's a
+
+NOTE Confidence: 0.774066746234894
+
+860163ac-56d7-4a4a-9a5a-174ec73d768a
+00:18:08.096 --> 00:18:10.524
+tough one, an protanopia.
+
+NOTE Confidence: 0.841796576976776
+
+485f4d59-6863-4a55-9bc8-ccb9000d9cc1
+00:18:10.530 --> 00:18:16.994
+The you just go to view and you
+go to proof. Set up an you just
+
+NOTE Confidence: 0.841796576976776
+
+80bac7c7-d690-47c1-bc42-4fa628b1d99f
+00:18:16.994 --> 00:18:21.842
+select one of these and it will
+throw it into you know.
+
+NOTE Confidence: 0.870150625705719
+
+a25a9813-69ab-4c5d-b742-8f44e764ed7d
+00:18:21.850 --> 00:18:26.543
+No, it will change the colors to
+how you know somebody with color
+
+NOTE Confidence: 0.870150625705719
+
+bc226e01-f85e-40b1-b09c-c5e2e259c8e2
+00:18:26.543 --> 00:18:30.875
+blindness might be viewing it.
+And also this is so doing that
+
+NOTE Confidence: 0.870150625705719
+
+d85503a2-9c56-45c5-a7fc-bdc0367a05ec
+00:18:30.875 --> 00:18:32.680
+will tip you off too.
+
+NOTE Confidence: 0.853783369064331
+
+13647aff-61fa-4e34-858c-75b3fc0ec746
+00:18:32.680 --> 00:18:36.999
+Potential contrast issues, so
+definitely definitely utilize
+
+NOTE Confidence: 0.853783369064331
+
+8ec4bddc-40a8-42ef-9209-257dd6372606
+00:18:36.999 --> 00:18:39.467
+those features in Photoshop
+
+NOTE Confidence: 0.7120081782341
+
+b103c508-b144-448b-a0c2-16ba81308150
+00:18:39.467 --> 00:18:46.983
+language can. My jumping back
+too much impact in browser here
+
+NOTE Confidence: 0.84554797410965
+
+6ac54487-c0e2-454f-9f34-8dc2dd3b76bb
+00:18:46.983 --> 00:18:52.124
+Next up. Um, let's jump back to
+Chrome for a minute.
+
+NOTE Confidence: 0.0882496908307076
+
+7d4285c3-9f24-4641-878a-c4815c9344a9
+00:18:52.980 --> 00:18:54.010
+Um?
+
+NOTE Confidence: 0.836541712284088
+
+deba6069-ef45-40db-be1e-44bdffc9cd02
+00:18:55.220 --> 00:18:59.576
+If you inspect your code, uh,
+let's say you inspect they
+
+NOTE Confidence: 0.836541712284088
+
+c1ff1e45-0503-4f81-89d9-ec42b5e489a9
+00:18:59.576 --> 00:19:04.724
+let's. Let's take a look at this
+button here. Uh, it's a link.
+
+NOTE Confidence: 0.0818010717630386
+
+963f6575-23ae-40ab-8a4c-a48c9c326e89
+00:19:04.724 --> 00:19:07.200
+Pretty easy. Um?
+
+NOTE Confidence: 0.915332734584808
+
+4ea9d758-56df-4fdc-a37a-071b26651e10
+00:19:07.820 --> 00:19:12.530
+In Chrome, there's a. There's a
+tab here called Accessibility,
+
+NOTE Confidence: 0.915332734584808
+
+5de76c36-026f-4c16-831e-e63acb5db959
+00:19:12.530 --> 00:19:18.653
+and this is like really useful
+and that'll give you a lot of
+
+NOTE Confidence: 0.915332734584808
+
+ac30972b-1aad-4e5b-9305-9d3a01114ed7
+00:19:18.653 --> 00:19:20.537
+extra information about your
+
+NOTE Confidence: 0.854442238807678
+
+593f275e-f122-4c86-86a6-3d2a9cbf871d
+00:19:20.537 --> 00:19:24.969
+particular elements. Uhm, this
+is was a bad selection. Let me
+
+NOTE Confidence: 0.854442238807678
+
+e456406c-422f-45c8-9da8-96752b7404ea
+00:19:24.969 --> 00:19:26.253
+select something else here.
+
+NOTE Confidence: 0.833430230617523
+
+877a8414-9b44-40f9-9866-a7fa7707f9b4
+00:19:27.560 --> 00:19:32.862
+OK, Alright so I selected the
+button. Uhm, there's no Aria,
+
+NOTE Confidence: 0.833430230617523
+
+3914bd87-5578-4999-9d24-d133e7c7bd71
+00:19:32.862 --> 00:19:39.128
+um, uh, attributes on it. It
+will tell me what the text node
+
+NOTE Confidence: 0.833430230617523
+
+a82829b1-5405-4f13-83b4-f1b9b38c6fa6
+00:19:39.128 --> 00:19:42.020
+is, which is something we always
+
+NOTE Confidence: 0.88407689332962
+
+cc5f822f-b59b-4263-8bb3-e6092bc7a4ad
+00:19:42.020 --> 00:19:46.719
+want to. Uh, ensure that is
+present. You know, if I had a
+
+NOTE Confidence: 0.88407689332962
+
+0e347bc5-db11-42de-a86c-3be77212970b
+00:19:46.719 --> 00:19:51.126
+button that like say a menu
+button and I was testing it, and
+
+NOTE Confidence: 0.88407689332962
+
+6bacd33a-f36f-410d-b3cc-56a770846f32
+00:19:51.126 --> 00:19:55.533
+you know I can jump over to the
+Accessibility tab and I could
+
+NOTE Confidence: 0.88407689332962
+
+98952a1f-cc6b-433a-8c97-ab7635d53caa
+00:19:55.533 --> 00:19:59.601
+immediately see if the contents
+of that has some kind of proper
+
+NOTE Confidence: 0.88407689332962
+
+17b089dd-267d-455c-9f7c-dde0888a5d4f
+00:19:59.601 --> 00:20:02.991
+labeling on it, you know.
+Certainly icons and buttons and
+
+NOTE Confidence: 0.88407689332962
+
+13f45191-d11d-4e56-bcec-f9779d759423
+00:20:02.991 --> 00:20:06.720
+things of that nature. You
+always want to make sure that
+
+NOTE Confidence: 0.88407689332962
+
+b81d9987-9cde-48ca-896f-fe4b751b3371
+00:20:06.720 --> 00:20:08.415
+you have an equivalent there,
+
+NOTE Confidence: 0.881460905075073
+
+e364c7e2-0246-414b-92c4-b2642fa3ecef
+00:20:08.415 --> 00:20:13.627
+but. Hide that text or you know,
+use Aria label on the element is
+
+NOTE Confidence: 0.881460905075073
+
+5d902515-1536-4d1e-8717-bbb3949a4e2b
+00:20:13.627 --> 00:20:17.686
+very very important to have some
+kind of text equivalent there.
+
+NOTE Confidence: 0.881460905075073
+
+4fad1296-f169-4563-bdcd-38abd7503213
+00:20:17.686 --> 00:20:22.852
+So a tool like this will allow
+you to easily see that you can
+
+NOTE Confidence: 0.881460905075073
+
+d1ccd583-50cd-4814-bd9e-17edbdf9a052
+00:20:22.852 --> 00:20:28.387
+see what kind of role is on it.
+You can see if it's a focusable
+
+NOTE Confidence: 0.881460905075073
+
+d45586e4-1f8c-4ebf-82a9-498061077517
+00:20:28.387 --> 00:20:32.077
+element or not, so it's very,
+very useful in analyzing.
+
+NOTE Confidence: 0.903154969215393
+
+b80848df-3b42-4db3-bc83-49291454c4dc
+00:20:32.120 --> 00:20:35.920
+Elements on your page so
+definitely use that when you
+
+NOTE Confidence: 0.763783633708954
+
+06783839-e4e5-4c1e-9a4a-c72265d5599f
+00:20:35.920 --> 00:20:42.904
+can. And then a lesson. At
+least I'm on my way to 2nd.
+
+NOTE Confidence: 0.763783633708954
+
+87f85cdc-7019-4cf0-9f7c-49c2b16e3e0a
+00:20:42.904 --> 00:20:45.389
+That's next next to last.
+
+NOTE Confidence: 0.785979092121124
+
+4fbb82c8-3a4a-4687-a449-212e3d13decb
+00:20:46.010 --> 00:20:49.130
+We have screen readers Uhm you
+
+NOTE Confidence: 0.898788809776306
+
+552c7462-da8f-467c-908c-fd553aaf6e3f
+00:20:49.130 --> 00:20:54.400
+guys uh. He asking me, there's a
+pretty important, uh, the
+
+NOTE Confidence: 0.898788809776306
+
+4f346027-f6ea-4904-8f31-1723fce0c256
+00:20:54.400 --> 00:20:58.000
+Accessibility team uses various
+screen readers to test our work.
+
+NOTE Confidence: 0.898788809776306
+
+a779ca8d-c9ec-4963-bdbc-9cd036991a51
+00:20:58.000 --> 00:21:00.160
+It's very important to listen to
+
+NOTE Confidence: 0.881817042827606
+
+9e64b62d-aa4e-4a6c-adc2-8c08ae6cf44a
+00:21:00.160 --> 00:21:04.698
+your work. Uh, if you want to
+truly empathize somebody who's
+
+NOTE Confidence: 0.881817042827606
+
+bf78e4e3-90d7-4433-b6fd-527ce124e8f1
+00:21:04.698 --> 00:21:09.766
+blind or who has low vision and
+then you have to use the tools
+
+NOTE Confidence: 0.881817042827606
+
+9d68e1e5-fa8f-483c-9a3a-b2f27051432a
+00:21:09.766 --> 00:21:15.196
+they use to navigate your site.
+You just you have to do it OK on
+
+NOTE Confidence: 0.881817042827606
+
+97d6261f-537d-4151-b8d5-090972a97fae
+00:21:15.196 --> 00:21:20.264
+the PC we use jaws, an NDA which
+is free and easy to install.
+
+NOTE Confidence: 0.896584033966064
+
+59bdd3b9-f8ee-413b-b571-3f261f2a4b5f
+00:21:20.310 --> 00:21:25.185
+And on the Mac amount we have,
+there's the built in voice over
+
+NOTE Confidence: 0.896584033966064
+
+ceac0a5b-f1fe-4c62-b41c-b3d539f64af6
+00:21:25.185 --> 00:21:29.310
+that. A lot of blind folks use
+called voiceover. It's built
+
+NOTE Confidence: 0.896584033966064
+
+163faf0a-462d-4968-935e-de185ef1fedb
+00:21:29.310 --> 00:21:33.810
+into the operating system and
+you can turn it on very easily
+
+NOTE Confidence: 0.896584033966064
+
+1d561483-7344-405c-81ca-6ff728e2f131
+00:21:33.810 --> 00:21:35.310
+by hitting Command F5.
+
+NOTE Confidence: 0.883007645606995
+
+d6bef6fe-9115-4607-b9f9-63f294c13a0d
+00:21:35.940 --> 00:21:40.296
+And then you can start walking
+through your work, right? You
+
+NOTE Confidence: 0.883007645606995
+
+05f7c305-5ef7-4824-8e44-b9dd7d4f628b
+00:21:40.296 --> 00:21:44.652
+should listen to your work on
+multiple browsers. Uhm, but if
+
+NOTE Confidence: 0.883007645606995
+
+de6424dd-f10c-47cd-8a8c-f3824aa29def
+00:21:44.652 --> 00:21:50.196
+time is short then only you know
+when you scream meter over 5 Fox
+
+NOTE Confidence: 0.883007645606995
+
+ac475d8a-af4e-4e74-92c3-5d9f0f135d3a
+00:21:50.196 --> 00:21:54.552
+as this is the most preferred
+browser of many disabled users.
+
+NOTE Confidence: 0.883816957473755
+
+30ff21e1-0eac-49b5-8bb9-47779f4a4c72
+00:21:55.370 --> 00:21:59.176
+When you're walking through, you
+know, let's fire up the screen
+
+NOTE Confidence: 0.883816957473755
+
+3466ca51-858c-4b40-8d11-d940857e5fa5
+00:21:59.176 --> 00:22:00.214
+reader right now.
+
+NOTE Confidence: 0.821732759475708
+
+500af214-8450-4f55-a9f3-296ba376be56
+00:22:01.250 --> 00:22:04.019
+Let's go to.
+
+NOTE Confidence: 0.872886776924133
+
+5ac32fe8-5c7c-455a-b9aa-60a636cf1fa6
+00:22:05.040 --> 00:22:07.020
+Anybody want to be brave enough
+
+NOTE Confidence: 0.69274765253067
+
+b94bf7ad-d00d-448d-96e8-2daae3325b55
+00:22:07.020 --> 00:22:10.998
+to? How 'bout, how 'bout
+hammons, right do uh?
+
+NOTE Confidence: 0.838786482810974
+
+77a1f167-fd9f-459d-ad5e-4a3f0499cd6a
+00:22:13.440 --> 00:22:15.120
+Apartments, I'm sorry.
+
+NOTE Confidence: 0.726908564567566
+
+21ccca28-6b70-40f6-95d6-cc535dd9e140
+00:22:15.770 --> 00:22:17.770
+Put Erika on the spot.
+
+NOTE Confidence: 0.736778855323792
+
+e38163f4-a807-4d72-bf42-aa2fc86b1e35
+00:22:18.360 --> 00:22:21.470
+So let's fire it up.
+
+NOTE Confidence: 0.815582275390625
+
+bfec7bf9-ddd9-4d1c-aff0-2ef40b9fc018
+00:22:22.310 --> 00:22:24.200
+Walk through it.
+
+NOTE Confidence: 0.686240613460541
+
+3d8d077d-5e77-49ac-81f2-27ec57e13c9e
+00:22:25.960 --> 00:22:29.590
+Well, not working.
+
+NOTE Confidence: 0.734726667404175
+
+c6bea64c-3e4d-4123-b63f-cf8170e0c0b8
+00:22:29.590 --> 00:22:36.356
+Yes. Top international document
+clickable link it to make
+
+NOTE Confidence: 0.521399199962616
+
+b874ab34-1ec8-42e4-97d5-2a633701cf66
+00:22:36.356 --> 00:22:39.736
+content. Company profits visited
+
+NOTE Confidence: 0.58546656370163
+
+d51f22e2-fff0-416d-8795-314db243b087
+00:22:39.736 --> 00:22:43.585
+link link. About
+
+NOTE Confidence: 0.500720739364624
+
+f34638aa-12be-4fa0-a264-ec215977e189
+00:22:43.585 --> 00:22:45.590
+you.
+
+NOTE Confidence: 0.602232277393341
+
+fe6e36f0-5f33-47dc-9bad-6f66fbab4070
+00:22:45.590 --> 00:22:49.340
+Division. I
+
+NOTE Confidence: 0.648503720760345
+
+01d99810-43d1-4d7e-ada2-50c2c7601f9f
+00:22:49.340 --> 00:22:56.049
+would help. It's with four
+liter with a thought he was
+
+NOTE Confidence: 0.648503720760345
+
+b0508917-8d02-4223-86d0-cdd0fd8b9032
+00:22:56.049 --> 00:22:57.973
+headed that country song.
+
+NOTE Confidence: 0.868545591831207
+
+344ef82f-773a-4532-b8b2-786157171c26
+00:22:57.980 --> 00:23:03.958
+Cool. Asking too many
+problems here, but what you
+
+NOTE Confidence: 0.868545591831207
+
+18987745-f21a-4bb7-bf60-ec0aaf681913
+00:23:03.958 --> 00:23:07.927
+wanna pay? Pay particular
+attention to want to pay
+
+NOTE Confidence: 0.868545591831207
+
+207e3b23-818d-4005-8142-eff19ca644f9
+00:23:07.927 --> 00:23:11.014
+particular attention to
+interactive elements that maybe
+
+NOTE Confidence: 0.868545591831207
+
+af12c581-7918-40c2-a594-7a1ed90c66b9
+00:23:11.014 --> 00:23:14.983
+that may not be labeled
+properly. They might have
+
+NOTE Confidence: 0.868545591831207
+
+1acd6bd9-9be4-4c66-b83b-5b54d35a2450
+00:23:14.983 --> 00:23:18.952
+incorrect rolls or states. For
+example, visual buttons with
+
+NOTE Confidence: 0.868545591831207
+
+9d8a1875-a8b3-42f6-b538-b15f9a49014b
+00:23:18.952 --> 00:23:22.480
+missing text, links, linked
+images with missing alternative
+
+NOTE Confidence: 0.868545591831207
+
+5124eefb-cfc6-4ed4-8ea0-75fef4170118
+00:23:22.480 --> 00:23:28.213
+texts, alink with a roll value
+of a button. You know what you
+
+NOTE Confidence: 0.868545591831207
+
+c179b32a-1dd6-416d-9791-2afb911b8aa4
+00:23:28.213 --> 00:23:29.977
+convey visually must also
+
+NOTE Confidence: 0.884021461009979
+
+149295af-5e93-441a-b794-3c951be5714f
+00:23:29.977 --> 00:23:34.816
+convey. Auditore Lee so you
+wanna make sure that you're
+
+NOTE Confidence: 0.884021461009979
+
+97e8d0df-e54a-49b0-be8c-f846b2b67bc8
+00:23:34.816 --> 00:23:39.656
+listening very, very carefully
+for you know how you know
+
+NOTE Confidence: 0.884021461009979
+
+6856cf18-d65b-4f9b-8d9c-4107fced1d7f
+00:23:39.656 --> 00:23:43.044
+elements on the page,
+interactive elements in
+
+NOTE Confidence: 0.884021461009979
+
+0adec578-1dc4-477d-b855-df3086f62857
+00:23:43.044 --> 00:23:48.368
+particular are read back to you
+and you're looking. You trying
+
+NOTE Confidence: 0.884021461009979
+
+f986df00-47d0-4be3-b679-8b20dbd43fae
+00:23:48.368 --> 00:23:53.692
+to create as as equal an
+experience as you possibly can.
+
+NOTE Confidence: 0.884021461009979
+
+9049bc40-ef59-43eb-b055-80d6b94a2d12
+00:23:53.692 --> 00:23:56.596
+So labeling stuff is like super
+
+NOTE Confidence: 0.884731471538544
+
+d1ebf8bd-f60b-4ddd-8d6b-615a60c00864
+00:23:56.596 --> 00:24:01.533
+important. And you can also use
+your screen reader. You can use
+
+NOTE Confidence: 0.884731471538544
+
+f53a8fb8-d6da-46de-acc9-1660de32c476
+00:24:01.533 --> 00:24:05.966
+it as an opportunity to see if
+your interface would benefit
+
+NOTE Confidence: 0.884731471538544
+
+fd9e2396-001f-4682-a3d7-0dc913f18f82
+00:24:05.966 --> 00:24:09.996
+from additional enhancements
+that can be found in our area.
+
+NOTE Confidence: 0.884731471538544
+
+e91ea26e-999e-40d5-8478-c3822c7311f0
+00:24:09.996 --> 00:24:14.429
+For example adding. See, you
+might have a toggle and you
+
+NOTE Confidence: 0.884731471538544
+
+074e46af-b71e-4cdc-9353-a1eeb8836182
+00:24:14.429 --> 00:24:20.071
+might say, Well, you know why
+this would be better if I if I
+
+NOTE Confidence: 0.884731471538544
+
+393da12d-2c89-4457-a6b1-97f8a3e6d3fb
+00:24:20.071 --> 00:24:25.310
+did something like Aria expanded
+to it to convey the state of the
+
+NOTE Confidence: 0.884731471538544
+
+c6ea9708-38ec-475c-8305-3754c4e3b7a1
+00:24:25.310 --> 00:24:26.922
+button button opening and
+
+NOTE Confidence: 0.900566935539246
+
+d0636fb2-5b85-48d5-a07a-001ee3f00729
+00:24:26.922 --> 00:24:30.986
+closing. You know, so you know,
+conveying some vital information
+
+NOTE Confidence: 0.900566935539246
+
+22d7245f-88ba-446a-85be-57a1ef3d017c
+00:24:30.986 --> 00:24:36.238
+to someone who is blind is, you
+know, can make real huge impact
+
+NOTE Confidence: 0.900566935539246
+
+6d4241f6-5f62-42c0-b6b9-d505d9916c6e
+00:24:36.238 --> 00:24:40.682
+on the experience that they
+have. So pay attention to stuff
+
+NOTE Confidence: 0.900566935539246
+
+a9cc4b4c-dbae-4e31-9a8e-15f907da9d16
+00:24:40.682 --> 00:24:45.530
+like that you know, be careful
+not to go overboard with Aria's
+
+NOTE Confidence: 0.900566935539246
+
+4bec05c0-98a8-4fab-b507-b567aa97acc4
+00:24:45.530 --> 00:24:49.570
+misuse can make your interface
+less iaccessible. The first rule
+
+NOTE Confidence: 0.900566935539246
+
+31897355-d667-4e43-b490-e85ce5bc782c
+00:24:49.570 --> 00:24:53.206
+of Aria as not to use it at all.
+
+NOTE Confidence: 0.868873178958893
+
+522ba7d6-09bc-4e91-aa51-af6e1ac5e605
+00:24:53.220 --> 00:24:57.855
+Meaning that one should always
+leverage more inherent semantics
+
+NOTE Confidence: 0.868873178958893
+
+6745df09-91a7-44fb-8fdd-d3573263f83b
+00:24:57.855 --> 00:24:59.400
+found in HTML.
+
+NOTE Confidence: 0.407059490680695
+
+1518419e-ffe7-42b0-a904-986bf643e3cd
+00:24:59.410 --> 00:25:02.220
+Open.
+
+NOTE Confidence: 0.835164666175842
+
+e64d6070-bb7f-4bb2-8876-cbb515946d28
+00:25:02.220 --> 00:25:08.290
+Active X. Sorry about
+that yeah. So yeah, use always
+
+NOTE Confidence: 0.835164666175842
+
+194c2d9f-1578-42da-b073-4e1e7a1ab4f5
+00:25:08.290 --> 00:25:13.210
+use semantic HTML instead of
+using a device like A roll of
+
+NOTE Confidence: 0.835164666175842
+
+8fb4310b-8f21-4f4b-a919-ae1e541e52ee
+00:25:13.210 --> 00:25:18.130
+Button Anna Tabindex, you might
+want to use a button instead, so
+
+NOTE Confidence: 0.835164666175842
+
+9ce5828c-6799-4ba7-9a84-85513c2289ff
+00:25:18.130 --> 00:25:22.640
+keep that stuff in mind as
+you're developing the next thing
+
+NOTE Confidence: 0.901345491409302
+
+f0d5d560-a4aa-4af7-9883-f7c607fd7262
+00:25:22.640 --> 00:25:27.675
+up. Is a keyboard testing
+keyboard testing is like super
+
+NOTE Confidence: 0.901345491409302
+
+15b70b2b-ecf8-4085-8a33-dfbd7806f8ad
+00:25:27.675 --> 00:25:33.135
+easy to do. You can even combine
+it with your screen reader
+
+NOTE Confidence: 0.901345491409302
+
+47db0dcd-e48d-41c1-b2db-7da13a66922a
+00:25:33.135 --> 00:25:38.595
+testing if you want about it
+really is just a simple matter
+
+NOTE Confidence: 0.901345491409302
+
+b5bb49df-1972-4840-8d43-b956a53b3e3d
+00:25:38.595 --> 00:25:41.780
+of walking through your
+interface and OK.
+
+NOTE Confidence: 0.817665815353394
+
+91ddc9e2-bb55-4053-9128-4a391d317046
+00:25:41.810 --> 00:25:46.790
+I've been walking through it,
+use it, don't use the mouse, put
+
+NOTE Confidence: 0.817665815353394
+
+8be6ee19-9f35-4227-8c1e-42106f8d304b
+00:25:46.790 --> 00:25:50.940
+the mouse down and you know just
+walked through OK.
+
+NOTE Confidence: 0.879812359809875
+
+7474c6ed-be1b-461b-9678-39a3c61eca4f
+00:25:51.720 --> 00:25:54.808
+Visually, I'm I'm seeing
+outlines here. That's awesome.
+
+NOTE Confidence: 0.879812359809875
+
+5b4ea3c8-eecc-4f98-941f-f66bba297010
+00:25:54.808 --> 00:25:59.054
+Alright, this is great. You
+know, with my keyboard. Uhm, I
+
+NOTE Confidence: 0.879812359809875
+
+f0b04ba2-54b5-45a6-ab00-5c846d209cac
+00:25:59.054 --> 00:26:03.686
+can. I can, you know I can
+access a drop down navigation.
+
+NOTE Confidence: 0.879812359809875
+
+165076d0-c2a2-4ad5-bfad-f49754155d6d
+00:26:03.686 --> 00:26:07.932
+You know you want to make sure
+that especially anything that
+
+NOTE Confidence: 0.879812359809875
+
+b972ec96-162d-4887-ade5-89626e6542de
+00:26:07.932 --> 00:26:13.722
+you can do with the mouse you
+want to be able to do with a
+
+NOTE Confidence: 0.879812359809875
+
+dec698e3-106d-450c-b349-98515e14ddb5
+00:26:13.722 --> 00:26:17.196
+keyboard. There again this
+ability. It's all about creating
+
+NOTE Confidence: 0.879812359809875
+
+e1a433de-6528-4fa8-a5d8-a750f56b5832
+00:26:17.196 --> 00:26:21.056
+equivalencies, so this is like a
+really easy testable form.
+
+NOTE Confidence: 0.834078848361969
+
+0ed66dc6-078c-43ae-a60d-bdf69fc27b0d
+00:26:21.090 --> 00:26:24.546
+Yeah, that's that's, uh,
+something that you can be
+
+NOTE Confidence: 0.834078848361969
+
+ea0db3ac-43e0-4d71-82c9-0e58cd1e5ef5
+00:26:24.546 --> 00:26:28.770
+should definitely be doing. By
+the way, this is a Harman
+
+NOTE Confidence: 0.834078848361969
+
+de879140-5b95-4425-89fc-d0f67c263338
+00:26:28.770 --> 00:26:32.610
+site. Looks pretty great
+America. Are you on the phone?
+
+NOTE Confidence: 0.745380163192749
+
+50d69e36-db90-4bd6-b944-d15e10de5842
+00:26:34.900 --> 00:26:38.268
+I am thank you.
+
+NOTE Confidence: 0.881544768810272
+
+7fde1af2-31bf-4597-b2ef-54d78e89cc27
+00:26:38.270 --> 00:26:40.730
+Yeah, this is coming out really
+
+NOTE Confidence: 0.777240812778473
+
+989d36aa-d9d2-4258-8c91-55b32725a56f
+00:26:40.730 --> 00:26:46.005
+really well. Good cool alright?
+So are and then you know
+
+NOTE Confidence: 0.777240812778473
+
+f58dabaf-6b7f-4d52-8b5c-834c9205b3fe
+00:26:46.005 --> 00:26:48.480
+laughing at least we have.
+
+NOTE Confidence: 0.883965373039246
+
+f6d35bbf-3fa9-476f-bee0-67b6d8f34740
+00:26:48.480 --> 00:26:53.725
+Visual testing. Which I forgot
+to change my last slide. Shame
+
+NOTE Confidence: 0.883965373039246
+
+bbfcf273-6f3c-4e82-85e2-3e86526431c5
+00:26:53.725 --> 00:26:57.985
+on main, but visual testing is
+about knowing what to look for.
+
+NOTE Confidence: 0.883965373039246
+
+fc71a814-3ea2-43df-84be-b60426c7d4c9
+00:26:57.985 --> 00:26:59.760
+You know, pay attention to
+
+NOTE Confidence: 0.856038928031921
+
+c5e98c06-0293-469f-8d29-e416ad7eef0d
+00:26:59.760 --> 00:27:03.954
+details. Contrast OK, not sure
+without the color contrast
+
+NOTE Confidence: 0.856038928031921
+
+c48f92c4-3daf-4a6c-9602-20c70eae15ef
+00:27:03.954 --> 00:27:08.734
+analyzer mentioned above. Do all
+videos have captions? Are the
+
+NOTE Confidence: 0.856038928031921
+
+779b3b3a-a4da-47a6-9748-ab3932cb4025
+00:27:08.734 --> 00:27:12.558
+captions actress would be
+experienced benefit from a
+
+NOTE Confidence: 0.856038928031921
+
+6aa94fa2-971b-4e68-ac32-508985ba8b46
+00:27:12.558 --> 00:27:17.338
+transcript? Are we spawning new
+Windows without warning and you
+
+NOTE Confidence: 0.856038928031921
+
+92e91212-d057-489f-a10f-57880c6b660c
+00:27:17.338 --> 00:27:23.552
+guys know all know how I feel
+about that one? Does third party
+
+NOTE Confidence: 0.856038928031921
+
+9f6280f9-8616-44cb-a9e6-6063a11a0873
+00:27:23.552 --> 00:27:26.420
+content or tools on our site?
+
+NOTE Confidence: 0.758828639984131
+
+019bdf9b-a9c0-42ad-b4b3-0f5115de4d99
+00:27:26.960 --> 00:27:30.250
+Uh, you know, you know?
+
+NOTE Confidence: 0.901873409748077
+
+9a77a33b-0d8b-4994-b94d-af7965b79386
+00:27:30.250 --> 00:27:33.470
+The third party content creating
+barriers to access. You know
+
+NOTE Confidence: 0.901873409748077
+
+98d563de-4395-408c-b24e-5cbb250b9d5b
+00:27:33.470 --> 00:27:37.334
+these are all issues that you
+should be looking for in paying
+
+NOTE Confidence: 0.901873409748077
+
+8c249a87-447a-4359-998b-c4b3f4901773
+00:27:37.334 --> 00:27:41.198
+and paying attention to, and you
+know bring these issues up with
+
+NOTE Confidence: 0.901873409748077
+
+b9998a6f-04e5-45b4-b8aa-a3acfe2faf58
+00:27:41.198 --> 00:27:45.384
+your DPM or your manager and you
+know the more we advocate the
+
+NOTE Confidence: 0.901873409748077
+
+5d0ae518-d368-44a1-87d7-500b77b998c1
+00:27:45.384 --> 00:27:48.604
+more Accessibility becomes a
+priority and a part of our
+
+NOTE Confidence: 0.901873409748077
+
+82ca07a6-a580-486b-bc6f-b0ee78610839
+00:27:48.604 --> 00:27:52.468
+culture. You know that's what we
+all want and it's really the
+
+NOTE Confidence: 0.901873409748077
+
+bd0cbba4-a785-403b-8f3f-40bea670fa4b
+00:27:52.468 --> 00:27:56.010
+only way that we can succeed at
+becoming a more inclusive
+
+NOTE Confidence: 0.901873409748077
+
+c0007510-907e-4e2e-ad27-d82970277e8b
+00:27:56.010 --> 00:28:00.196
+company in the future. So the
+more we bring it up the better.
+
+NOTE Confidence: 0.901153028011322
+
+87fe1b60-6dab-43fe-b846-d17228cc7396
+00:28:00.260 --> 00:28:04.990
+These tools that I just
+mentioned here are like the bare
+
+NOTE Confidence: 0.901153028011322
+
+8d7b4704-fa2c-48b8-99cd-44092e12eae5
+00:28:04.990 --> 00:28:08.860
+minimum of tools needed to
+address the most common
+
+NOTE Confidence: 0.901153028011322
+
+022e3d97-c0ff-43f0-8b70-0d6e0d93f11d
+00:28:08.860 --> 00:28:10.580
+Accessibility issues aside made
+
+NOTE Confidence: 0.910438776016235
+
+b908e9fa-c93d-4439-8120-dbb3d14cee7b
+00:28:10.580 --> 00:28:15.452
+face. As you become more
+proficient with using these
+
+NOTE Confidence: 0.910438776016235
+
+b1ad8918-c5b5-4e1c-abab-70845ad87961
+00:28:15.452 --> 00:28:19.448
+tools, they will eventually
+become second nature to you.
+
+NOTE Confidence: 0.910438776016235
+
+6dad8027-4681-4ac9-941f-6ec3a666be18
+00:28:19.448 --> 00:28:23.444
+Fixing issues is another problem
+altogether though, and I
+
+NOTE Confidence: 0.910438776016235
+
+3e783e68-2964-45d7-b90d-06466b08b358
+00:28:23.444 --> 00:28:26.996
+certainly understand that
+development is a spectrum of
+
+NOTE Confidence: 0.910438776016235
+
+628a8c09-43c0-4074-9cf1-cc330d7122b0
+00:28:26.996 --> 00:28:30.992
+talents. Some developers will be
+more adept at fixing
+
+NOTE Confidence: 0.910438776016235
+
+b69f789d-4b5c-4cbe-b1a6-294d1af8b8c9
+00:28:30.992 --> 00:28:34.544
+Accessibility issues, while
+others may struggle, and that's
+
+NOTE Confidence: 0.910438776016235
+
+1e85e184-3446-4cf8-818c-efa453473aa5
+00:28:34.544 --> 00:28:39.428
+OK. You know nobody expects you
+to be an expert here.
+
+NOTE Confidence: 0.882983326911926
+
+2ad48b60-c812-4dc1-9b76-de6364bf59b0
+00:28:39.450 --> 00:28:43.267
+As you uncover barriers to
+access, just do the best that
+
+NOTE Confidence: 0.882983326911926
+
+86b35b85-6092-4059-8505-d3f083e48ffc
+00:28:43.267 --> 00:28:47.778
+you can to address any issues
+that you uncover. And if you hit
+
+NOTE Confidence: 0.882983326911926
+
+f2015506-0e41-4413-a3e9-e307347d002f
+00:28:47.778 --> 00:28:51.942
+a real stumper then you know
+feel free to reach to developers
+
+NOTE Confidence: 0.882983326911926
+
+37dfa2fd-83fc-4343-afde-988f0ba72078
+00:28:51.942 --> 00:28:56.106
+with more proficiency in this
+area. In a war, we're all here
+
+NOTE Confidence: 0.882983326911926
+
+349f8a3e-0c7c-4d29-92e5-92a8d3971b20
+00:28:56.106 --> 00:28:59.923
+to help, and you know better one
+another moving forward. So
+
+NOTE Confidence: 0.614745259284973
+
+aac47521-fd72-4b10-9486-87068fe7fc8a
+00:28:59.923 --> 00:29:02.080
+that's. For today.
+
+NOTE Confidence: 0.912983238697052
+
+763a3f77-a46a-42d4-92f1-44f68f021ec1
+00:29:04.920 --> 00:29:08.990
+I would like to open the floor
+for any questions.
+
+NOTE Confidence: 0.893959522247314
+
+2457f6a6-6e7a-4b52-a61a-d8cb1ab25f7a
+00:29:09.610 --> 00:29:15.652
+When it comes
+to the navigation
+
+NOTE Confidence: 0.893959522247314
+
+78da1eed-08b8-417b-9ad2-808248d11704
+00:29:15.652 --> 00:29:18.673
+with your keys.
+
+NOTE Confidence: 0.812414109706879
+
+4e061ffc-9d20-407f-b0fe-dbac30499848
+00:29:18.680 --> 00:29:23.423
+Are there preferences like
+everyone does tabs right, but
+
+NOTE Confidence: 0.812414109706879
+
+812dd6af-d1bf-4238-9605-94b4a8944968
+00:29:23.423 --> 00:29:30.274
+when you do, a NAV menu is
+ideal to also navigate with like
+
+NOTE Confidence: 0.848809957504272
+
+7b5b3cf9-ccc3-484f-8a53-68abf20b4b11
+00:29:30.274 --> 00:29:35.958
+arroz. I I see that as more
+well, again, you know you have
+
+NOTE Confidence: 0.848809957504272
+
+85537f59-9f80-4aab-b009-a0477361fc1d
+00:29:35.958 --> 00:29:40.248
+to send Accessibility is a
+little bit subjective now, but
+
+NOTE Confidence: 0.848809957504272
+
+9d1d68fb-0194-485b-b9a4-348a469ac85d
+00:29:40.248 --> 00:29:45.396
+you-know-what, uhm, I think if
+you can use an arrow key there
+
+NOTE Confidence: 0.848809957504272
+
+b6297fb0-4ed6-4313-abb8-5edcbfc4d6e5
+00:29:45.396 --> 00:29:47.112
+too you know too.
+
+NOTE Confidence: 0.892549216747284
+
+3a33122a-d54a-4ed3-8765-5e97fd8fe03c
+00:29:47.120 --> 00:29:52.246
+Move through the navigation,
+then do it. I don't think you
+
+NOTE Confidence: 0.892549216747284
+
+f773d668-7238-4658-8d00-53d5a0d2b193
+00:29:52.246 --> 00:29:57.838
+have to. I think the disabled
+web is probably very used to,
+
+NOTE Confidence: 0.892549216747284
+
+82964a10-19de-4dd6-9423-c82f52732dc8
+00:29:57.838 --> 00:30:02.498
+you know, simply being able to
+tab through a certain.
+
+NOTE Confidence: 0.906969487667084
+
+031493c9-2cf9-4bdd-b1dd-93a8601cf73f
+00:30:02.530 --> 00:30:08.458
+Interfaces and you know? I think
+that's all we need to focus on
+
+NOTE Confidence: 0.906969487667084
+
+6920b797-8b22-4e54-b9e4-6ddcc8587e32
+00:30:08.458 --> 00:30:14.842
+right now, but I am not opposed
+to seeing you guys. You know, go
+
+NOTE Confidence: 0.906969487667084
+
+c3962d10-87a7-42b6-929d-a4a6e97cf963
+00:30:14.842 --> 00:30:19.858
+above and beyond to improve the
+way an interface works for
+
+NOTE Confidence: 0.906969487667084
+
+5acb61d8-8c3b-43db-ae90-1d03adfbe09f
+00:30:19.858 --> 00:30:25.786
+keyboard users. If you can do
+it. If not I don't think it's
+
+NOTE Confidence: 0.906969487667084
+
+9eb1fe98-d472-45fb-8b5d-b8e2da2530ab
+00:30:25.786 --> 00:30:31.714
+going to be a big concern if you
+don't add that type of
+
+NOTE Confidence: 0.906969487667084
+
+058ee9e9-9540-4c96-9ca2-7a6161ef3c7e
+00:30:31.714 --> 00:30:33.538
+enhancement into the interface.
+
+NOTE Confidence: 0.911265015602112
+
+f2c34daf-4311-4b96-88b9-e81e6e6cf58b
+00:30:34.900 --> 00:30:41.057
+OK. In the past, like
+user testing for visual users,
+
+NOTE Confidence: 0.911265015602112
+
+2889341b-f622-4965-b8a8-e79d3baf0674
+00:30:41.057 --> 00:30:46.613
+but have we had a chance to
+explore testing some of our
+
+NOTE Confidence: 0.911265015602112
+
+4a27bed3-7e8b-430c-aff3-4b97238ee118
+00:30:46.613 --> 00:30:48.465
+Accessibility stuff with actual.
+
+NOTE Confidence: 0.882171094417572
+
+3d1ffb8f-1b30-4e45-86cd-79d3ddc31411
+00:30:48.480 --> 00:30:52.992
+You know, for example like blind
+users, that is a great question.
+
+NOTE Confidence: 0.882171094417572
+
+745ca6c0-b125-4cb2-bbde-50a2cde38f5c
+00:30:52.992 --> 00:30:56.376
+No, we haven't, and I think
+that's a real.
+
+NOTE Confidence: 0.80010849237442
+
+75e2cec5-c01c-43c4-b092-ae6a8f957714
+00:30:57.160 --> 00:31:00.208
+A shortcoming of.
+
+NOTE Confidence: 0.903079092502594
+
+dc6493ef-c64c-4e33-817a-db1f4f786f5d
+00:31:01.070 --> 00:31:05.063
+Of our, you know testing
+practices here. I would love to,
+
+NOTE Confidence: 0.903079092502594
+
+04602d86-81b8-4a01-a49e-a2274898f024
+00:31:05.063 --> 00:31:09.056
+you know, take the opportunity
+to do that and that's something
+
+NOTE Confidence: 0.903079092502594
+
+d306172c-b2bc-4393-8f04-7f33c7fcb4f0
+00:31:09.056 --> 00:31:13.049
+that would. I would love to
+explore more in the future.
+
+NOTE Confidence: 0.896899342536926
+
+05f88b42-8eeb-416f-a11e-af6dee652090
+00:31:13.050 --> 00:31:17.747
+Have to be honest with you
+though, we don't do regular
+
+NOTE Confidence: 0.900058686733246
+
+82204ab2-80f4-44fb-8d85-ece57f134945
+00:31:17.747 --> 00:31:22.437
+usability. Yeah, so I I it's
+very difficult to try to get
+
+NOTE Confidence: 0.900058686733246
+
+401995a0-9119-4c96-bdc5-5fa78bf204ef
+00:31:22.437 --> 00:31:26.694
+actual disabled folks to use our
+interfaces, but I am certainly
+
+NOTE Confidence: 0.900058686733246
+
+f772f08b-0282-453d-aa35-d2f76c2b4a66
+00:31:26.694 --> 00:31:32.112
+not opposed to it at all. I
+would love to see it happen and
+
+NOTE Confidence: 0.900058686733246
+
+299ea7bc-69af-43a6-9f11-f4314ac265dc
+00:31:32.112 --> 00:31:36.369
+maybe in the future we can see
+it happen. Will see.
+
+NOTE Confidence: 0.679543495178223
+
+a1eef777-0554-419a-a070-c8741288589f
+00:31:38.640 --> 00:31:41.648
+I spell gotta question.
+
+NOTE Confidence: 0.677416086196899
+
+9446715c-5e74-4b31-934a-2656a3a448c7
+00:31:41.650 --> 00:31:45.074
+It's actually a Raven,
+
+NOTE Confidence: 0.820420622825623
+
+ebc9a3f8-e677-4366-9d99-7a425889b583
+00:31:45.074 --> 00:31:50.763
+Raven. When I tried to test
+like tab navigation for
+
+NOTE Confidence: 0.820420622825623
+
+31eeee7d-4459-491e-975d-f933446e6f8a
+00:31:50.763 --> 00:31:53.448
+navigating via tab with fire
+
+NOTE Confidence: 0.90466845035553
+
+964a2f34-2ae3-49e9-9d8c-fa0bae100a30
+00:31:53.448 --> 00:31:57.880
+Fox. Possible, I like doing it
+wrong because I've never been
+
+NOTE Confidence: 0.90466845035553
+
+f4c07231-899b-49e7-8aaa-dc47d2e4f251
+00:31:57.880 --> 00:32:02.548
+successful. It only works for me
+in Chrome really. I would love
+
+NOTE Confidence: 0.90466845035553
+
+0cea4160-edbe-480a-b7a7-d45f09d642d1
+00:32:02.548 --> 00:32:06.827
+to see an example of the issue
+that you're having there.
+
+NOTE Confidence: 0.917810261249542
+
+3ac795ae-b790-4c53-8942-bf49b567a9dc
+00:32:06.830 --> 00:32:10.431
+I'll get a recording of it and
+I'll shoot you an email. Yeah,
+
+NOTE Confidence: 0.917810261249542
+
+7bbeaba1-0fa7-4cce-85ec-20e2b186f6e2
+00:32:10.431 --> 00:32:13.755
+shoot me an email. I would
+definitely like to see that it's
+
+NOTE Confidence: 0.917810261249542
+
+73a11431-9f81-4f2a-bc69-768a3b75cdc9
+00:32:13.755 --> 00:32:16.525
+very, very possible that you
+could be having specific browser
+
+NOTE Confidence: 0.917810261249542
+
+8b067373-075d-41e8-af34-1369a27ca00c
+00:32:16.525 --> 00:32:19.295
+issue there, but let's look into
+that little bit more.
+
+NOTE Confidence: 0.838422656059265
+
+92ff1959-7a2e-4e50-9b21-a2c5d86f2eaa
+00:32:20.120 --> 00:32:22.260
+Thank you.
+
+NOTE Confidence: 0.962519526481628
+
+d63ddec1-65f4-4fbb-9e91-530ed079a64e
+00:32:25.530 --> 00:32:26.799
+Any other questions?
+
+NOTE Confidence: 0.896112740039825
+
+bb8c145b-3f75-475f-91ee-e736f1b814d0
+00:32:30.420 --> 00:32:36.270
+OK, well you guys know where to
+reach me. I if you do have any
+
+NOTE Confidence: 0.896112740039825
+
+12b60a77-4e4e-4def-8e68-4338cd6b01ac
+00:32:36.270 --> 00:32:40.950
+questions I will send out this
+slide deck right after the call
+
+NOTE Confidence: 0.896112740039825
+
+6ca06839-5c22-4020-889e-0bb4e69337b6
+00:32:40.950 --> 00:32:42.510
+and you know just.
+
+NOTE Confidence: 0.890700817108154
+
+02f04d91-e015-4820-960d-b929d25e02d6
+00:32:43.100 --> 00:32:47.780
+Uh, yeah. If you can start using
+some of these tools in your
+
+NOTE Confidence: 0.890700817108154
+
+ffecaa77-9b08-4836-9cb6-3f1484965e80
+00:32:47.780 --> 00:32:51.740
+day-to-day work, that would be
+fantastic. I just also want to
+
+NOTE Confidence: 0.890700817108154
+
+29821352-a7ee-4254-949f-a22b9de5735d
+00:32:51.740 --> 00:32:56.780
+let you know that you know Dan
+and I really think that QA needs
+
+NOTE Confidence: 0.890700817108154
+
+d61c6a05-f0f8-4177-884a-2b260c079659
+00:32:56.780 --> 00:33:00.740
+to be involved more in testing.
+And certainly you know, really,
+
+NOTE Confidence: 0.890700817108154
+
+4fd0eda1-76a2-4dad-8902-8de0a9d4ff42
+00:33:00.740 --> 00:33:02.900
+you know when it comes to
+
+NOTE Confidence: 0.840972483158112
+
+29826c70-f0f8-4641-b07b-d8d408132623
+00:33:02.900 --> 00:33:05.558
+Accessibility. For the longest
+
+NOTE Confidence: 0.901414096355438
+
+fa296f83-b9bc-477e-8577-d6ecc9ea3841
+00:33:05.558 --> 00:33:11.048
+time, uh. We had made it more
+of a developer responsibility,
+
+NOTE Confidence: 0.901414096355438
+
+91975ee4-7d4c-4ff0-9fdc-31c7cf0397e3
+00:33:11.048 --> 00:33:17.236
+an I've had a long time to think
+about this and really, you know,
+
+NOTE Confidence: 0.901414096355438
+
+5abe5482-0845-4c0b-955a-de7f563e0d0c
+00:33:17.236 --> 00:33:22.982
+the only way that we can again
+that we can succeed succeed at
+
+NOTE Confidence: 0.901414096355438
+
+d3ae824f-4bb2-4fab-814f-533821892a70
+00:33:22.982 --> 00:33:28.728
+this more is if everybody is
+doing their part and QA in my
+
+NOTE Confidence: 0.901414096355438
+
+e7714e52-e9f7-42a5-bfe3-017cd4399e2f
+00:33:28.728 --> 00:33:34.474
+mind really has to learn a bit
+more about testing using some of
+
+NOTE Confidence: 0.901414096355438
+
+4abcc682-1c20-45e3-a1f6-811dd25ac849
+00:33:34.474 --> 00:33:37.126
+these tools here and testing for
+
+NOTE Confidence: 0.906278669834137
+
+d705cb0c-9290-43f3-b5e6-9b40408612f2
+00:33:37.126 --> 00:33:40.578
+Accessibility. And we're
+certainly going to work on that,
+
+NOTE Confidence: 0.906278669834137
+
+3d6c9b29-e4b9-4c97-8263-c5bc2c6a5c5b
+00:33:40.578 --> 00:33:45.466
+so I'm working on a training for
+them now, so you may be
+
+NOTE Confidence: 0.906278669834137
+
+2b5ae1dd-88ee-4b3d-8fa5-ebb10c54b738
+00:33:45.466 --> 00:33:49.602
+hopefully by the end of the
+summer we will have completed
+
+NOTE Confidence: 0.906278669834137
+
+3bf4e7d8-76e0-4920-b542-e450935be29c
+00:33:49.602 --> 00:33:52.986
+that training. You guys will
+start seeing more Accessibility
+
+NOTE Confidence: 0.906278669834137
+
+f178110f-ae85-4724-a5e3-b54b4ad93618
+00:33:52.986 --> 00:33:56.370
+issues come through during
+normal testing, but certainly we
+
+NOTE Confidence: 0.906278669834137
+
+fc1a4879-191e-4683-8e25-c7a9aac2f7ce
+00:33:56.370 --> 00:34:01.634
+all have a part to play in this.
+And you know, I think if
+
+NOTE Confidence: 0.906278669834137
+
+4026beae-c90c-49a7-a705-af2977d38df7
+00:34:01.634 --> 00:34:06.522
+development is doing their part
+to smoke test to work in, QA is
+
+NOTE Confidence: 0.906278669834137
+
+21452b9c-dd91-4ca5-94a8-931faaa69917
+00:34:06.522 --> 00:34:08.026
+doing their part to.
+
+NOTE Confidence: 0.892809271812439
+
+ee5211ab-cb40-4afb-94e4-a8f9654b6d62
+00:34:08.040 --> 00:34:11.860
+You know, test more thoroughly
+and more inclusively that you
+
+NOTE Confidence: 0.892809271812439
+
+adc348f0-8805-489a-845f-f51a25d675dc
+00:34:11.860 --> 00:34:16.826
+know our work is just going to
+get more and more better, and
+
+NOTE Confidence: 0.892809271812439
+
+c7cad53a-bb99-4937-bdd6-e3aa10f5972a
+00:34:16.826 --> 00:34:21.410
+certainly that's a good thing
+for the end user. But from a
+
+NOTE Confidence: 0.892809271812439
+
+7e6c33eb-f02a-4a4c-a9f2-ff1466f3bfad
+00:34:21.410 --> 00:34:24.466
+competitive standpoint, it's
+also really good thing that
+
+NOTE Confidence: 0.892809271812439
+
+c7b0a2c4-52cc-4808-a829-337b667d017e
+00:34:24.466 --> 00:34:29.050
+we're thinking about this kind
+of stuff as far as laws go,
+
+NOTE Confidence: 0.892809271812439
+
+6ce8c85a-ff35-4e6a-9277-b5245a6226fa
+00:34:29.050 --> 00:34:34.780
+people ask me about that a lot,
+you know, do we have to do this?
+
+NOTE Confidence: 0.892809271812439
+
+bbac3b44-ba0d-4148-8dbe-a6ad33b19c2c
+00:34:34.780 --> 00:34:38.600
+And certainly when it comes to
+private and public sector.
+
+NOTE Confidence: 0.877852082252502
+
+5fdb5816-2b77-41d7-9a91-be2b2c231e1a
+00:34:38.660 --> 00:34:40.328
+Websites were under no.
+
+NOTE Confidence: 0.827096045017242
+
+39f3898d-2247-4979-9f71-09fa83009045
+00:34:41.240 --> 00:34:48.110
+A lot to do this type of thing,
+but it behooves us to, you know.
+
+NOTE Confidence: 0.888679444789886
+
+fcbae836-fdea-4fbe-bee9-cc04dcbd0751
+00:34:48.120 --> 00:34:52.476
+Build a better experience for
+people you know. It's it better
+
+NOTE Confidence: 0.888679444789886
+
+a31a29a9-ef09-4d4d-a1a4-ad58e73046fd
+00:34:52.476 --> 00:34:58.020
+and you know for so many reasons
+you know when you build a more
+
+NOTE Confidence: 0.888679444789886
+
+76cd8285-168d-4b58-a43a-59239081216e
+00:34:58.020 --> 00:35:01.584
+inclusive experience. You also
+building a better experience for
+
+NOTE Confidence: 0.888679444789886
+
+5bb4fc78-8d1d-4ab6-b5a5-84cfe49f4a48
+00:35:01.584 --> 00:35:05.148
+everybody, whether they're
+disabled or not. So you know,
+
+NOTE Confidence: 0.888679444789886
+
+51ef30c9-6fca-42cd-af34-9e2ccd248b50
+00:35:05.148 --> 00:35:08.712
+from from from Usability
+perspective, it's good from a
+
+NOTE Confidence: 0.888679444789886
+
+8653bd83-dbf8-47f7-a314-f1f5221cba03
+00:35:08.712 --> 00:35:10.296
+business perspective. It's good.
+
+NOTE Confidence: 0.918012678623199
+
+2b69eaa6-291f-4b81-b8f7-2a5378ace635
+00:35:10.330 --> 00:35:14.950
+May come to a point where you
+know the Department of Justice
+
+NOTE Confidence: 0.918012678623199
+
+d53afcbf-51ad-4529-a0c2-08b5547d5c0b
+00:35:14.950 --> 00:35:19.185
+eventually. You know it does say
+that you know websites fall
+
+NOTE Confidence: 0.918012678623199
+
+4c96c454-4c65-4282-ab70-18d15c9ae1dc
+00:35:19.185 --> 00:35:22.650
+under the Americans with
+Disability Act and that website
+
+NOTE Confidence: 0.918012678623199
+
+7afa604e-c3cd-4b88-98b9-9c2c8139ed94
+00:35:22.650 --> 00:35:26.115
+owners have to take
+responsibility and you know get
+
+NOTE Confidence: 0.918012678623199
+
+c8f176b4-0594-4de6-97f6-40660d59b66c
+00:35:26.115 --> 00:35:27.270
+their sites into.
+
+NOTE Confidence: 0.896267831325531
+
+97c5ae98-7d7c-45ec-80b3-c2968c919fc2
+00:35:27.310 --> 00:35:31.342
+You know good standing, you know
+so that there so that more
+
+NOTE Confidence: 0.896267831325531
+
+030493e6-1ad6-4241-8a55-2e653fa8f9db
+00:35:31.342 --> 00:35:34.702
+people can use them. and I
+certainly think that will
+
+NOTE Confidence: 0.896267831325531
+
+6950106a-1452-4bb4-ae15-249846c672cb
+00:35:34.702 --> 00:35:38.398
+happen. Hope it will happen
+within the next few years, but
+
+NOTE Confidence: 0.896267831325531
+
+0e40c121-9fe8-4440-93d4-463701422c41
+00:35:38.398 --> 00:35:43.102
+so you know with all of this
+effort that you see for me and
+
+NOTE Confidence: 0.896267831325531
+
+4ff6ef41-27bc-4b15-be98-406609571309
+00:35:43.102 --> 00:35:46.462
+that others here and pushing
+Accessibility more. You know, I
+
+NOTE Confidence: 0.896267831325531
+
+de3d79db-c0cc-4b37-9300-bfc4f1b31c75
+00:35:46.462 --> 00:35:51.166
+just want to see us get to a
+point. You know, when that does
+
+NOTE Confidence: 0.896267831325531
+
+6dc72866-7dcb-45d3-9d85-a59439e2ade8
+00:35:51.166 --> 00:35:54.526
+eventually happened, Tempe is
+going to be, you know, well
+
+NOTE Confidence: 0.542685091495514
+
+27ac5385-cd47-4155-ad97-e213200481aa
+00:35:54.526 --> 00:35:58.459
+situated. And in a.
+
+NOTE Confidence: 0.909412741661072
+
+25bd5ad0-6010-4435-b7d4-bb902fc1ee6c
+00:35:58.460 --> 00:36:02.420
+You know a really good place
+when it comes to inclusive best
+
+NOTE Confidence: 0.909412741661072
+
+41c3bc76-3284-487b-98d2-7eca0133bc58
+00:36:02.420 --> 00:36:06.710
+practices and and you know it's
+going to be like really easy for
+
+NOTE Confidence: 0.909412741661072
+
+7ba6d518-6412-4bb9-8b84-2a94a340ebcb
+00:36:06.710 --> 00:36:10.670
+us to deal with that situation
+when it does happen. So that's
+
+NOTE Confidence: 0.909412741661072
+
+47efbf51-213f-4727-9a3c-7b7068398479
+00:36:10.670 --> 00:36:14.630
+where we're kind of headed with
+this. I'm not looking to boil
+
+NOTE Confidence: 0.909412741661072
+
+b433cabb-a03f-41d3-af6a-397ae76080d0
+00:36:14.630 --> 00:36:18.920
+the oceans, as Linda Hardin
+likes to say to me all the time
+
+NOTE Confidence: 0.909412741661072
+
+0cc465e6-7633-42cc-b7b1-6a7d67768084
+00:36:18.920 --> 00:36:23.210
+spell don't you can't boil the
+oceans, so I'm not looking to do
+
+NOTE Confidence: 0.909412741661072
+
+ee444ac1-847f-43a1-b335-82bf9dd64e13
+00:36:23.210 --> 00:36:26.510
+that, but progressively, and,
+you know, taking baby steps to
+
+NOTE Confidence: 0.909412741661072
+
+f7cf54cc-fd0f-4e4f-9c02-8b711ee9abf0
+00:36:26.510 --> 00:36:30.470
+get us thinking a little bit
+more inclusively is what I'm all
+
+NOTE Confidence: 0.909412741661072
+
+1ea2e7b1-c946-4fcb-9db7-916b2681fa07
+00:36:30.470 --> 00:36:31.790
+about and trying to.
+
+NOTE Confidence: 0.613279342651367
+
+f35bd363-d77b-458e-ae00-11536bb83d94
+00:36:31.860 --> 00:36:34.248
+You know, see us.
+
+NOTE Confidence: 0.920551180839539
+
+416390fc-c002-4520-a7d3-ebc4e7825f65
+00:36:34.250 --> 00:36:37.660
+Achieve more in our day-to-day
+work, so will get there
+
+NOTE Confidence: 0.920551180839539
+
+4d0b3c9e-a113-4853-9854-a45489ed5e74
+00:36:37.660 --> 00:36:41.752
+eventually, and you know that's
+pretty much it. So thank you for
+
+NOTE Confidence: 0.920551180839539
+
+638337fe-c4fd-4c75-bd20-93d07e610fb3
+00:36:41.752 --> 00:36:45.503
+listening, and if you have any
+questions about any of these
+
+NOTE Confidence: 0.920551180839539
+
+bca128d0-37be-40cc-bf64-aa68c2ddb4a1
+00:36:45.503 --> 00:36:49.595
+tools or any of the results that
+these tools produce again, just
+
+NOTE Confidence: 0.920551180839539
+
+390acc09-c507-4afb-a2d4-cc9c646dde12
+00:36:49.595 --> 00:36:54.369
+reach out to me and Rebecca and
+then it would be more than happy
+
+NOTE Confidence: 0.920551180839539
+
+e3bb1135-af89-434c-9950-f8d121ec3af5
+00:36:54.369 --> 00:36:58.461
+to walk you through the problem
+and help you figure this stuff
+
+NOTE Confidence: 0.920551180839539
+
+3db96cfa-6566-4705-abaa-0ea3ff0d508e
+00:36:58.461 --> 00:37:00.166
+out so that we're building
+
+NOTE Confidence: 0.869730770587921
+
+1a8f0f0d-32a2-44d1-b9ca-a1457afd2cd7
+00:37:00.166 --> 00:37:05.439
+better. User interfaces for
+everybody. That's it, thanks.
+
+NOTE Confidence: 0.848526954650879
+
+64db8002-d9fb-4aea-9bfb-be1c2c6a4b00
+00:37:06.060 --> 00:37:11.028
+Thank you spell. Thank you very
+much. Thank you very thank you.
+
