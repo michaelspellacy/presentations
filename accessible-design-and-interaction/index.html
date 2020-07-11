@@ -1,0 +1,329 @@
+---
+layout: micropubpost
+title: "ARIA & You: Accessible Design & Interaction"
+date: "2017-03-17 14:23:27"
+tags: Accessibility Presentation
+localcss: "index.css"
+---
+
+<p><a href="https://www.w3.org/WAI/intro/aria">ARIA (Accessible Rich Internet Applications)</a> is an extension of HTML, created by the <a href="https://www.w3.org/">W3C</a>, which allows authors to make their websites or applications more usable to various assistive technologies (AT), such as screen or braille readers.</p>
+
+<p>Today we will review the navigation for Kaiser Permanente's career site and discuss some of the finer points of including ARIA in our own work.</p>
+
+<p>In the process of creating our navigation, we adhere to the core principles of progressive enhancement and <a href="https://resilientwebdesign.com/">resilient design</a>, and that is in <em>crafting</em> an experience that is always usable at it's core, while enhancing it for more capable browser technologies. As always, we begin with good old HTML.</p>
+
+<h3>Semantics</h3>
+
+<p>For the markup of our navigation, we focus on providing semantic robustness:</p>
+
+<ol>
+	<li>Use of HTML5 landmarks, such as <code>&lt;nav&gt;</code>, provide baked in information for AT users, so be sure to use them where appropriate.</li>
+	<li>While sighted users are instantly provided with context, AT users may require additional aids to assist them in using your interface. For example, we could create a heading and then hide it offscreen, but ARIA can provide the same information about your interface, through use of the <code>aria-label</code> attribute. On our navigation, we have added such a label and have given it a value of "primary".</li>
+	<li>ID's on our <code>&lt;li&gt;</code> elements will provide a nice hook in helping us apply additional context and enhancement for sighted and non-sighted users alike.</li>
+</ol>
+
+<h3>Our Markup</h3>
+
+<pre><code contenteditable="true">&lt;<strong>nav</strong> id="primary-nav" <strong>aria-label="primary"</strong>&gt;
+
+    &lt;ul id="primary-nav-list"&gt;
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading"&gt;Who We Are&lt;/h2&gt;
+
+        &lt;ul&gt;
+            &lt;li <strong>id="nav-the-kp-difference"</strong>&gt;&lt;a href="/the-kp-difference/"&gt;The KP Difference&lt;/a&gt;&lt;/li&gt; 
+            &lt;li id="nav-location"&gt;&lt;a href="/locations/"&gt;Our Locations&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-mission-and-history"&gt;&lt;a href="/mission-and-history/"&gt;Mission &amp; History&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-innovation"&gt;&lt;a href="/innovation/"&gt;Innovation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;
+
+    ...
+
+    &lt;/ul&gt;
+
+&lt;/<strong>nav</strong>&gt;</code></pre>
+
+<h3>Prep Work & Enhancement</h3>
+
+<p>Since we will be using JavaScript (jQuery in our example) to enhance our navigation, we need to ensure that we are providing <em>parity</em> for AT users. It is not enough to create an interface that can simply be toggled visually. There is deeper work to be done here in order to provide a navigational interface that can be used by all people.</p>
+
+<ol>
+	<li>
+
+		<p>First, we insert our menu button. This button will toggle the navigation opened and closed. We could add the button directly to our markup as inline HTML, but since it only exists to toggle our navigation, via script, then it should be treated as an enhancement, via script, as well.</p>
+
+		<p>Note the inclusion of <code>aria-expanded</code> to the button element. Since our navigation is initially closed, we immediately set the value of this attribute to a default state of "false".</p>
+
+<pre><code contenteditable="true">&lt;button id="primary-button" <strong>aria-expanded="false</strong>"&gt;Menu&lt;/button&gt;</code></pre>
+
+		<p>Normally, we might place a menu button <em>outside</em> of the navigation landmark, but by placing it <em>within</em> the landmark, we are providing better context for AT users. This allows our button to dovetail nicely with the <code>&lt;nav&gt;</code> landmark and the <code>aria-label</code> that element includes. Screen readers will now announce a variant of: "Menu, collapsed button navigation primary". If this button were placed outside of our navigation, a screen reader might only announce: "Menu, collapsed button", which is not very helpful. In such cases, we might require additional ARIA attributes, such as aria-contols, to bind the button and the navigation together.</p>
+
+<pre><code contenteditable="true">&lt;nav id="primary-nav" aria-label="primary"&gt;
+
+    <strong>&lt;button id="primary-button" <strong>aria-expanded="false</strong>"&gt;Menu&lt;/button&gt;</strong>
+
+    &lt;ul id="primary-nav-list"&gt;
+
+    ...
+
+    &lt;/ul&gt;
+
+&lt;/nav&gt;</code></pre>
+
+	</li> 
+	<li>
+
+		<p>Next, we need to enhance our h2 element. It is no longer a heading, but an interactive element within our navigation:</p>
+
+<pre><code contenteditable="true">&lt;h2 class="primary-nav-heading" <strong>aria-expanded="false"</strong> <strong>role="button"</strong> <strong>tabindex="0"</strong>&gt;Who We Are&lt;/h2&gt;</code></pre>
+
+		<p>Here we must also include aria-expanded with an initial state of "false". We also append a role attribute with a value of "button", since it is now an interactive button, and a tabindex with a value of "0". Setting an element with a tabindex of zero allows a non-focusable element to receive focus.</p>
+
+	</li>
+	<li>
+
+		<p>Finally, we append a hidden element to our <code>&lt;nav&gt;</code> landmark:</p>
+
+<pre><code contenteditable="true">&lt;nav id="primary-nav" aria-label="primary"&gt;
+
+    &lt;button id="primary-button" aria-expanded="false"&gt;Menu&lt;/button&gt;
+
+    &lt;ul id="primary-nav-list"&gt;
+
+    ...
+
+    &lt;/ul&gt;
+
+    <strong>&lt;div hidden id="current-selection">Current Page&lt;/div&gt;</strong>
+
+&lt;/nav&gt;</code></pre>
+
+		<p>This element will work closely with our list ID's and only be used by AT's.</p>
+
+	</li>
+</ol>
+
+<h3>Bringing It Together</h3>
+
+<p>It is business as usual in applying a script that toggles the visual state of our navigation button, menus, and sub menus, but in addition to these behaviors, we must also remember to ensure that we are passing the same state information to our ARIA attributes. If your navigation is now open, then your ARIA attributes must reflect these states as well.</p>
+
+<pre><code contenteditable="true">&lt;h2 class="primary-nav-heading" <strong>aria-expanded="true"</strong> role="button" tabindex="0"&gt;Who We Are&lt;/h2&gt;</code></pre>
+
+<p>A part of our script will also match the <code>&lt;body&gt;</code> ID of the current page we are on, with the <code>&lt;li&gt;</code> ID in our navigation. When there is a match, our script will do two things to the hyperlink within the list item:</p>
+
+<ol>
+	<li>Append <code>aria-labeledby</code> with a value of "current-selection". The inclusion of this attribute will bind the link with the hidden div we inserted earlier, indicating that the link corresponds to the current page we are on. When a screen reader accesses the link, the following will be read aloud: "Internal, link, The KP Difference" or "Link, The KP Difference, Current Page". The aria-describedby value can also be used as a styling hook to indicate to visual users that the selection is for the current page as well.</li>
+	<li>Change the matched link's href value to instead anchor to a position within the page, rather than taking the user to the same page again, after clicking on it. </li>
+</ol>
+
+<pre><code contenteditable="true">&lt;a <strong>href="#content"</strong> <strong>aria-describedby="current-selection"</strong>&gt;The KP Difference&lt;/a&gt;</code></pre>
+
+<h3>Our Enhanced Navigation</h3>
+
+<pre><code contenteditable="true">&lt;nav id="primary-nav" aria-label="primary"&gt;
+
+    <strong>&lt;button id="primary-button" <strong>aria-expanded="false</strong>"&gt;Menu&lt;/button&gt;</strong>
+
+    &lt;ul id="primary-nav-list"&gt;
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading" <strong>aria-expanded="false"</strong> <strong>role="button"</strong> <strong>tabindex="0"</strong>&gt;Who We Are&lt;/h2&gt;
+
+        &lt;ul&gt;
+            &lt;li id="nav-the-kp-difference"&gt;&lt;a <strong>href="#content"</strong> <strong>aria-describedby="current-selection"</strong>&gt;The KP Difference&lt;/a&gt;&lt;/li&gt; 
+            &lt;li id="nav-location"&gt;&lt;a href="/locations/"&gt;Our Locations&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-mission-and-history"&gt;&lt;a href="/mission-and-history/"&gt;Mission &amp; History&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-innovation"&gt;&lt;a href="/innovation/"&gt;Innovation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;
+
+    ...
+
+    &lt;/ul&gt;
+
+    <strong>&lt;div <strong>hidden</strong> id="current-selection">Current Page&lt;/div&gt;</strong>
+
+&lt;/nav&gt;</code></pre>
+
+<h3>Important!</h3>
+
+<ol>
+	<li>Escape Key - Be mindul of keyboard navigation. This means providing additional scripting for events such as clicking on the escape key or space bar.</li>
+	<li>Focus Management - What happens when a user closes your interface? Where does the elements focus go? Typically we return focus to the initiation point, so that a user can continue on with experience from there. So, closing the navigation with an escape key, might bring us back to the menu button, etc. </li>
+</ol>
+
+<h3>Reminders</h3>
+
+<ul>
+	<li>Our interfaces go deeper than what we can see on our monitors. A great user interface can be used by anybody.</li>
+	<li>Parity between the visual and non-visual experience is integral to success.</li>
+	<li>Use the right elements for the job and use ARIA to aid the experience where needed. The first rule of ARIA is not to use it. For example, a native <code>&lt;button&gt;</code> has accessibility built in, whereas <code>&lt;div role="button"&gt;</code> will need additional atributes to be keyboard friendly.</li>
+	<li>Accessibility can be hard at first, but get's easier with practice. Take simple steps to improving and estimate accordingly to allow for it during design and development.</li>
+	<li>Test your work using a screen reader! The <a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">aXe plugin</a> can also provide a ton of information about your interface.</li>
+</ul>
+
+<h3>Working Example</h3>
+
+<nav id="primary-nav" aria-label="primary">
+
+	<ul id="primary-nav-list">
+	<li>
+
+		<h2 class="primary-nav-heading">Who We Are</h2>
+
+		<ul>
+			<li id="nav-the-kp-difference"><a href="/the-kp-difference/">The KP Difference</a></li> 
+			<li id="nav-location"><a href="/locations/">Our Locations</a></li>
+			<li id="nav-mission-and-history"><a href="/mission-and-history/">Mission &amp; History</a></li>
+			<li id="nav-innovation"><a href="/innovation/">Innovation</a></li>
+		</ul>
+
+	</li>   
+	<li>
+
+		<h2 class="primary-nav-heading">Life &amp; Culture</h2>
+	
+		<ul>
+			<li id="nav-working-here"><a href="/working-here/">Working Here</a></li>
+			<li id="nav-diversity-and-inclusion"><a href="/diversity-and-inclusion/">Diversity &amp; Inclusion</a></li>
+			<li id="nav-disability"><a href="/disability/">Disability</a></li>
+			<li id="nav-military"><a href="/military/">Military</a></li>
+			<li id="nav-in-our-community"><a href="/in-our-community/">In Our Community</a></li>
+		</ul>
+
+	</li>   
+	<li>
+
+		<h2 class="primary-nav-heading">Career Areas</h2>
+
+		<ul>
+			<li id="nav-care-careers"><a href="/care-careers/">Care Careers</a></li>
+			<li id="nav-business-careers"><a href="/business-careers/">Business Careers</a></li>
+			<li id="nav-it-careers"><a href="/it-careers/">IT Careers</a></li>
+			<li id="nav-temporary-contract-opportunities"><a href="/temporary-contract/">Temporary Contract</a></li>
+			<li id="nav-physicians-and-dentists"><a href="/physicians-and-dentists/">Physicians &amp; Dentists</a></li>
+		</ul>
+
+	</li>   
+	<li>
+
+		<h2 class="primary-nav-heading">University</h2>
+
+		<ul>
+			<li id="nav-university"><a href="/university/">University Connection</a></li>
+			<li id="nav-early-career-opportunities"><a href="/early-career-opportunities/">Early Careers Opportunities</a></li>
+			<li id="nav-internship-opportunities"><a href="/internship-opportunities/">Internship Opportunities</a></li>
+		</ul>
+
+	</li>   
+	<li>
+
+		<h2 class="primary-nav-heading">Our Hiring Process</h2>
+
+		<ul>
+			<li id="nav-our-hiring-process"><a href="/our-hiring-process/">Overview</a></li>
+			<li id="nav-pre-hire-assessments"><a href="/pre-hire-assessments/">Assessments</a></li>
+			<li id="nav-reasons-to-join"><a href="/reasons-to-join/">Reasons To Join</a></li>
+			<li id="nav-search-information"><a href="/search-information/">Take It Online</a></li>
+			<li id="nav-faqs"><a href="/faqs/">FAQ</a></li>
+		</ul>
+
+	</li>   
+	</ul>
+
+</nav>
+
+<h3>HTML</h3>
+
+<pre><code>&lt;nav id="primary-nav" aria-label="primary"&gt;
+
+    &lt;ul id="primary-nav-list"&gt;
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading"&gt;Who We Are&lt;/h2&gt;
+
+        &lt;ul&gt;
+            &lt;li id="nav-the-kp-difference"&gt;&lt;a href="/the-kp-difference/"&gt;The KP Difference&lt;/a&gt;&lt;/li&gt; 
+            &lt;li id="nav-location"&gt;&lt;a href="/location/"&gt;Our Locations&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-mission-and-history"&gt;&lt;a href="/mission-and-history/"&gt;Mission &amp; History&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-innovation"&gt;&lt;a href="/innovation/"&gt;Innovation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;   
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading"&gt;Life &amp; Culture&lt;/h2&gt;
+    
+        &lt;ul&gt;
+            &lt;li id="nav-working-here"&gt;&lt;a href="/working-here/"&gt;Working Here&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-diversity-and-inclusion"&gt;&lt;a href="/diversity-and-inclusion/"&gt;Diversity &amp; Inclusion&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-disability"&gt;&lt;a href="/disability/"&gt;Disability&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-military"&gt;&lt;a href="/military/"&gt;Military&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-in-our-community"&gt;&lt;a href="/in-our-community/"&gt;In Our Community&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;   
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading"&gt;Career Areas&lt;/h2&gt;
+
+        &lt;ul&gt;
+            &lt;li id="nav-care-careers"&gt;&lt;a href="/care-careers/"&gt;Care Careers&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-business-careers"&gt;&lt;a href="/business-careers/"&gt;Business Careers&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-it-careers"&gt;&lt;a href="/it-careers/"&gt;IT Careers&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-temporary-contract-opportunities"&gt;&lt;a href="/temporary-contract/"&gt;Temporary Contract&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-physicians-and-dentists"&gt;&lt;a href="/physicians-and-dentists/"&gt;Physicians &amp; Dentists&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;   
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading"&gt;University&lt;/h2&gt;
+
+        &lt;ul&gt;
+            &lt;li id="nav-university"&gt;&lt;a href="/university/"&gt;University Connection&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-early-career-opportunities"&gt;&lt;a href="/early-career-opportunities/"&gt;Early Careers Opportunities&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-internship-opportunities"&gt;&lt;a href="/internship-opportunities/"&gt;Internship Opportunities&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;   
+    &lt;li&gt;
+
+        &lt;h2 class="primary-nav-heading"&gt;Our Hiring Process&lt;/h2&gt;
+
+        &lt;ul&gt;
+            &lt;li id="nav-our-hiring-process"&gt;&lt;a href="/our-hiring-process/"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-pre-hire-assessments"&gt;&lt;a href="/pre-hire-assessments/"&gt;Assessments&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-reasons-to-join"&gt;&lt;a href="/reasons-to-join/"&gt;Reasons To Join&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-search-information"&gt;&lt;a href="/search-information/"&gt;Take It Online&lt;/a&gt;&lt;/li&gt;
+            &lt;li id="nav-faqs"&gt;&lt;a href="/faqs/"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;   
+    &lt;/ul&gt;
+
+&lt;/nav&gt;</code></pre>
+
+<h3>SASS</h3>
+
+<p><a href="index.scss">View</a></p>
+
+<h3>jQuery</h3>
+
+<p><a href="index.js">View</a></p>
+
+<p><strong>Note:</strong> Plain vanilla JavaScript version coming soon.</p>
+
+<h3>Inspirations</h3>
+
+<ul>
+	<li><a href="https://resilientwebdesign.com/">Resilient Web Design</a> by Jeremy Keith</li>
+	<li><a href="https://www.smashingmagazine.com/inclusive-design-patterns/">Inclusive Design Patterns</a> by Heydon Pickering</li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="index.js"></script>
