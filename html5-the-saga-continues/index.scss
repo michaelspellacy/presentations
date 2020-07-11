@@ -1,0 +1,149 @@
+---
+layout: null
+---
+
+a {
+word-wrap: break-word; // TODO: add to global css eventually
+}
+
+#example-form {
+background-color: #fff;
+border: 1px #666 solid;
+box-shadow: 0 3px 20px #666;
+margin: 10px;
+padding: 10px;
+
+	fieldset {
+	border: 0;
+	}
+
+	legend {
+	color: #666;
+	font-weight: bold;
+	padding-bottom: 10px;
+	}
+
+	div {
+	background-color: #ccc;
+	padding: 10px;
+
+		&:nth-of-type(even) {
+		background-color: #eee;
+		}
+
+		label, input {
+		display: block;
+		}
+
+		label {
+		margin-bottom: 10px;
+		}
+
+		input {
+		width: 100%;
+		padding: 10px;
+		}
+
+	}
+
+	input[type="submit"], input[type="reset"] {
+	padding: 10px;
+	margin-left: 20px;
+	color: #fff;
+	background-color: #6f459d;
+	border: 0;
+	border-radius: 5px;
+	min-width: 100px;
+	}
+
+}
+
+/* Video Player */
+
+video {
+width: auto; // TODO: Move to global CSS.
+}
+
+#video-example-3 {
+background: #fff;
+border-radius: 10px;
+box-shadow: -3px 3px 20px #666;
+display: block;
+margin: 40px 30px;
+padding: 15px 15px 50px;
+transform: rotate(9deg);
+transition: transform 800ms;
+
+	@media(min-width: 778px) {
+
+		margin-left: 100px;
+
+	}
+
+	&:hover, &:focus {
+
+		@media(min-width: 778px) {
+
+			transform: rotate(369deg) scale(1.25);
+
+		}
+
+	}
+
+}
+
+#controls {
+background: #000 repeat-x top left;
+border-radius: 5px;
+border: 1px #333 solid;
+bottom: 20px;
+height: 31px;
+left: 60px;
+opacity: 0.3;
+position: absolute;
+transition: all 0.5s ease-in-out;
+width: 200px;
+
+	&:hover {
+	border-color: #555;
+	opacity: 0.85;
+	}
+
+	button {
+	background: transparent;
+	border: none;
+	height: 15px;
+	left: 8px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 8px;
+	width: 15px;
+	}
+
+	#display {
+	color: #fff;
+	font-family: "Xenon2", sans-serif;
+	font-size: 10px;
+	left: 45px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 6px;
+	}
+
+	#volume {
+	height: 15px;
+	position: absolute;
+	right: 8px;
+	top: 6px;
+	width: 50px;
+	}
+
+	#volumeicon {
+	position: absolute;
+	right: 62px;
+	top: 8px;
+	}
+
+}

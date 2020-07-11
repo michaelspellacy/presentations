@@ -1,0 +1,225 @@
+---
+layout: micropubpost
+title: "HTML5: The Saga Continues"
+description: "This is an internal presentation given to the TMP Worldwide development and DPM team in March of 2010."
+date: "2010-03-10 12:45:45"
+tags: Accessibility Presentation
+localcss: "index.css"
+localjs: "index.js"
+mf-photo: https://michaelspellacy.com/presentations/html5-the-saga-continues/html5-logo.png
+---
+
+<p><em>This is an internal presentation given to the TMP Worldwide development and DPM team in March of 2010.</em><p>
+
+<h2>What is HTML5?</h2>
+
+<p>HTML5 is a new version of HTML and XHTML. The HTML5 draft specification defines a single language that can be written in HTML and XML. It attempts to solve issues found in previous versions of HTML and addresses the needs of Web Applications, an area not adequately covered in previous versions of HTML.</p>
+
+<p><strong>Note:</strong> The HTML5 specification is currently considered a <em>Working Draft</em> but is expected to reach Candidate Recommendation by 2012. However, many parts of the HTML5 specification, in some form or another, are already supported in many browsers used today (except – you guessed it – Internet Explorer). HTML5 is considered evolutionary, not revolutionary, and will change the way we build websites for the better.</p>
+
+<h2>So what can we expect from HTML5?</h2>
+
+<h3>New Semantics</h3>
+
+<p>New HTML tags will be available to help us better structure, organize and define our documents (Yay!).</p>
+
+<p>Several new tags to be included are <code>article</code>, <code>aside</code>, <code>audio</code>, <code>canvas</code>, <code>command</code>, <code>datalist</code>,
+<code>details</code>, <code>figure</code>, <code>footer</code>, <code>header</code>, <code>progress</code>, <code>section</code>, and <code>video</code>. To name a few.</p>
+
+<h3>Local Storage</h3>
+
+<p>Provides a way for web sites to store information on your computer and retrieve it later. (Think of these as very large cookies.)</p>
+
+<h3>Geolocation</h3>
+
+<p>Pinpoints users location from Wi-Fi towers and GPS to enhance applications. For privacy reasons, the user will have to opt-in to this. (iPhone users should already be familiar with this concept.)</p>
+
+<h3>Offline Web Applications</h3>
+
+<p>Use Gmail or other applications offline! Any changes you’ve made will be uploaded to the remote web server upon reconnecting to the web. (Cool!)<p>
+
+<h3>Web (Service) Workers</h3>
+
+<p>A standard way for browsers to run JavaScript in the background. With web workers, You can spawn multiple "threads" that all run at the same time. (Yay!)</p>
+
+<h3>Error Handling</h3>
+
+<p>This part of the specification will define browser behavior when evil, poorly written documents are encountered. (Yay again!)
+
+<h3>Web Forms 2.0</h3>
+
+<p>Web forms will be easier to create in that we will no longer need to depend on JavaScript to create certain pieces of form functionality. For example, validation will now be native to the browser. (Yay!)</p>
+
+<p><a href="#web-form-example">Web Form Example</a> (At time of writing, this will only work in Opera or Google Chrome)</p>
+
+<h3>Video and Audio</h3>
+
+<p>HTML5 seeks to cover all the bases when it comes to rich media presentation within web pages. The <code>video</code> and <code>audio</code> tags will allow us to embed multimedia with the greatest of ease (and without the need for Flash).</p>
+
+<p><a href="#video-example">HTML5 Video Example</a> (At time of writing, this will only work in Opera or Google Chrome)</p>
+
+<h3>Behold Canvas!</h3>
+
+<p>HTML5 defines the <code>canvas</code> element as "a resolution-dependent bitmap canvas that can be used for rendering graphs, game graphics, or other visual images on the fly." A canvas is a rectangle in your page where you can use JavaScript to programmatically draw anything you want. HTML5 defines a set of functions ("the canvas API") for drawing shapes, defining paths, creating gradients, and applying transformations.</p>
+
+<h3>Grudge Match: HTML5 vs. Flash...Fight!</h3>
+
+<h4>HTML5</h4>
+
+<ul>
+	<li><a href="http://mrdoob.com/lab/javascript/waveform/">http://mrdoob.com/lab/javascript/waveform/</a></li>
+	<li><a href="http://mrdoob.com/lab/javascript/effects/branching/01_spite_mrdoob/">http://mrdoob.com/lab/javascript/effects/branching/01_spite_mrdoob/</a></li>
+	<li><a href="http://mrdoob.com/lab/javascript/effects/fire/01/">http://mrdoob.com/lab/javascript/effects/fire/01/</a></li>
+	<li><a href="http://mrdoob.com/lab/javascript/effects/zoomblur/03/">http://mrdoob.com/lab/javascript/effects/zoomblur/03/</a></li>
+	<li><a href="http://mrdoob.com/projects/chromeexperiments/google_sphere/">http://mrdoob.com/projects/chromeexperiments/google_sphere/</a></li>
+	<li><a href="http://mrdoob.com/projects/chromeexperiments/google_gravity/">http://mrdoob.com/projects/chromeexperiments/google_gravity/</a></li>
+	<li><a href="http://mrdoob.com/projects/chromeexperiments/depth_of_field/">http://mrdoob.com/projects/chromeexperiments/depth_of_field/</a></li>
+	<li><a href="http://9elements.com/io/projects/html5/canvas/">http://9elements.com/io/projects/html5/canvas/</a></li>
+	<li><a href="http://www.giuseppesicari.it/progetti/javascript-3d-model-viewer/">http://www.giuseppesicari.it/progetti/javascript-3d-model-viewer/</a></li>
+	<li><a href="http://webdev.stephband.info/parallax_demos.html">http://webdev.stephband.info/parallax_demos.html</a></li>
+	<li><a href="http://www.addyosmani.com/resources/canvasphoto/">http://www.addyosmani.com/resources/canvasphoto/</a></li>
+</ul>
+
+<h4>Flash</h4>
+
+<ul>
+	<li><a href="http://mrdoob.com/lab/actionscript/pv3d/real_materials/ring.html">http://mrdoob.com/lab/actionscript/pv3d/real_materials/ring.html</a></li>
+	<li><a href="http://mrdoob.com/lab/actionscript/pv3d/dof/05/">http://mrdoob.com/lab/actionscript/pv3d/dof/05/</a></li>
+	<li><a href="http://mrdoob.com/lab/actionscript/pv3d/dof/07/">http://mrdoob.com/lab/actionscript/pv3d/dof/07/</a></li>
+</ul>
+
+<h2 id="web-form-example">Web Form 2.0 Example</h2>
+
+<p>Please fill out the form located below and be sure to fill in all fields.</p>
+
+<form action="http://www.w3c.org/" method="post" id="example-form">
+
+	<fieldset>
+
+		<legend>Personal Details</legend>
+
+		<div>
+
+			<label for="txtFirstName">First Name:</label>
+
+			<input type="text" name="txtFirstName" id="txtFirstName" placeholder="Enter your first name" autofocus="autofocus" required>
+
+		</div>
+
+		<div>
+
+			<label for="txtLastName">Last Name:</label>
+
+			<input type="text" name="txtLastName" id="txtLastName" placeholder="Enter your last name" required>
+
+		</div>
+
+		<div>
+
+			<label for="txtPlanet">Home Planet:</label>
+
+			<input type="text" name="txtPlanet" id="txtPlanet" list="planets" placeholder="Enter your home planet" required>
+
+			<datalist id="planets">
+				<option value="Mercury">Mercury</option>
+				<option value="Venus">Venus</option>
+				<option value="Earth">Earth</option>
+				<option value="Mars">Mars</option>
+				<option value="Jupiter">Jupiter</option>
+				<option value="Saturn">Saturn</option>
+				<option value="Uranus">Uranus</option>
+				<option value="Neptune">Neptune</option>
+			</datalist>
+
+		</div>
+
+		<div>
+
+			<label for="numZipCode">Zip Code:</label>
+
+			<input type="text" name="numZipCode" id="numZipCode" required="required" pattern="[\d]{5}">
+
+		</div>
+
+		<div>
+
+			<label for="numShipExpenses">Ship Expenses:</label>
+
+			<input type="range" name="numShipExpenses" id="numShipExpenses" min="10" max="1000">
+
+		</div>
+
+		<div>
+
+			<label for="numAge">Experience Rating:</label>
+
+			<input type="number" name="numAge" id="numAge" min="10" max="100" required>
+
+		</div>
+
+		<div>
+
+			<label for="datStart">Start Date:</label>
+
+			<input type="date" name="datStart" id="datStart" required>
+
+		</div>
+
+	</fieldset>
+
+	<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"/>
+
+	<input type="reset" name="btnReset" id="btnReset" value="Reset"/>
+
+</form>
+
+<h2 id="video-example">Fun with Video: Meet Faith Spellacy!</h2>
+
+<video id="video-example-1" width="320" height="240" controls poster="faith-spellacy.png" preload="none" src="faith-spellacy.mp4" type="video/mp4">
+
+	<!-- Fallback -->
+
+	<a href="faith-spellacy.mp4"><img src="faith-spellacy.png" width="320" height="240" alt="Three year old Faith Spellacy playing dress up"></a>
+
+</video>
+
+<p>Besides encoding the video into the proper formats for viewing on the web and creating an (optional) poster image, this is all it will take to insert a video into a web page:</p>
+
+<pre><code>&lt;video width="320" height="240" controls poster="faith-spellacy.png" preload="none" src="faith-spellacy.mp4" type="video/mp4"&gt;
+
+	&lt;--Fallback --&gt;
+
+	&lt;a href="faith.mp4"&gt;&lt;img src="faith.png" width="320" height="240" alt="Three year old Faith Spellacy playing dress up"&gt;&lt;/a&gt;
+
+&lt;/video&gt;</code></pre>
+
+<h3>Custom Controls</h3>
+
+<p>Working with the HTML5 Video API we will be able to roll our own custom audio and video player controls with JavaScript.</p>
+
+<video id="video-example-2" width="320" height="240" controls poster="faith-spellacy.png" preload="none" src="faith-spellacy.mp4" type="video/mp4">
+
+	<!-- Fallback -->
+
+	<a href="faith-spellacy.mp4"><img src="faith-spellacy.png" width="320" height="240" alt="Three year old Faith Spellacy playing dress up"></a>
+
+</video>
+
+<h3>CSS Fun!</h3>
+
+<p>With a little dash of CSS3 we will then be capable of creating impressive layouts. Look Ma, no Flash! w00t!</p>
+
+<video id="video-example-3" width="320" height="240" controls poster="faith-spellacy.png" preload="none" src="faith-spellacy.mp4" type="video/mp4">
+
+	<!-- Fallback -->
+
+	<a href="faith-spellacy.mp4"><img src="faith-spellacy.png" width="320" height="240" alt="Three year old Faith Spellacy playing dress up"></a>
+
+</video>
+
+<h2>Downloads</h2>
+
+<ul>
+	<li><a href="html5-the-saga-continues.pdf">Adobe Acrobat, 293KB</a></li>
+	<li><a href="html5-the-saga-continues.pptx">Microsoft PowerPoint, 351KB</a></li>
+</ul>
